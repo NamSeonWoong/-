@@ -21,11 +21,15 @@ def bs(page):
     soup = BeautifulSoup(html.text, 'html.parser')
     return soup
 
-article_id_list = set()
-while len(article_id_list) > 50000:
-    page = bs(1)
-    for num in range(1, 16):
-        this = page.select_one(f"#main-area > div:nth-child(6) > table > tbody > tr:nth-child({num}) > td.td_article > div.board-list > div > a").get('href')
-        article_id_list.add(find_id(this))
+article_id_list = set(np.load("./article_id_list.npy", allow_pickle=True).tolist())
+while len(article_id_list) < 20000:
+    for where in range(1, 500):
+        page = bs(where)
+        for num in range(1, 16):
+            try:
+                this = page.select_one(f"#main-area > div:nth-child(6) > table > tbody > tr:nth-child({num}) > td.td_article > div.board-list > div > a").get('href')    
+                article_id_list.add(find_id(this))
+            except:
+                pass
 
 np.save("./article_id_list", article_id_list)
