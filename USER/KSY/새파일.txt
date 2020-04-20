@@ -24,7 +24,7 @@ var g_sUserId = "vxda7";
 var g_sGroupId = "false";
 var g_sCafeHome = "https://cafe.naver.com/" + "joonggonara";
 var g_sClubId = "10050146";
-var g_mobileWebLink = "https://m.cafe.naver.com/joonggonara/741225252";
+var g_mobileWebLink = "https://m.cafe.naver.com/joonggonara/741272498";
 
 var g_sCafeThumbUrl = 'https://cafethumb.pstatic.net';
 var g_sUpcafeUrl = 'https://up.cafe.naver.com';
@@ -55,7 +55,7 @@ var g_mainIframeWidth = '860';
 <script charset="utf-8" src="/static/js/mycafe/javascript/jindo.all-1577769455000-90818.js" type="text/javascript"></script>
 <script src="/static/js/mycafe/javascript/cssquery-1577769455000-18676.js" type="text/javascript"></script>
 <script src="/static/js/mycafe/javascript/jindo/common_util-1577769455000-4535.js" type="text/javascript"></script>
-<script src="/static/js/mycafe/javascript/cafe_common-1579151993000-28510.js" type="text/javascript"></script>
+<script src="/static/js/mycafe/javascript/cafe_common-1587347975000-28584.js" type="text/javascript"></script>
 <script src="/static/js/mycafe/javascript/cafe_eventutil-1577769455000-2096.js" type="text/javascript"></script>
 <script charset="utf-8" src="/static/js/mycafe/javascript/lib/cafe/jindo1/OneToOneChatLauncher-1577769455000-1422.js" type="text/javascript"></script>
 <script src="/static/js/mycafe/javascript/cafe_ui-1578547956000-19251.js" type="text/javascript"></script>
@@ -119,10 +119,10 @@ var mainTitle;
 if(pageTitle == null || pageTitle == "") {
 	mainTitle = cafeNameTitle + " : 네이버 카페";
 } else if (pageTitle == 'menuname') {
-    var menuNameTitle = "이케아(IKEA)";
+    var menuNameTitle = "식음료 상품권/쿠폰";
 	mainTitle = menuNameTitle + ',' + cafeNameTitle + " : 네이버 카페";
 } else if (pageTitle == 'articleSubject') {
-	var articleSubjectTitle = "이케아 확장형 테이블(VANGSTA), 의자 ADDE  판매합니다";
+	var articleSubjectTitle = " 배달의민족 3만원이상 주문 90프로로 팝니다";
 	mainTitle = articleSubjectTitle + " : 네이버 카페";
 } else {
 	mainTitle = pageTitle + ',' + cafeNameTitle + " : 네이버 카페";
@@ -186,7 +186,7 @@ function controlTagClickEvent(e){
         target   : parent,
         cssurl   : "/common/storyphoto/original_viewer.css",
         //CAFESUS-4811 LCS 개선 
-        gdid 	 : "90000004_00995A622C2E332400000000",
+        gdid 	 : "90000004_00995A622C2EEBB200000000",
         popupurl : "https://cafe.naver.com/common/storyphoto",
         allowRightMouseClick : true
     });
@@ -208,7 +208,7 @@ function controlTagClickEvent(e){
         url = imageUrlReplacer(url, cafefiles);
         
         mlayoutPhoto.setAllowRightMouseClick("true");
-        mlayoutPhoto.setGdid("90000004_00995A622C2E332400000000");
+        mlayoutPhoto.setGdid("90000004_00995A622C2EEBB200000000");
         mlayoutPhoto.doPlayer([url], 0);
     }
     
@@ -239,17 +239,17 @@ function controlTagClickEvent(e){
 </div>
 </div>
 </div>
-<div class="list-blog border-sub" id="post_741225252">
-<script>AutoSourcing.setString( "741225252", "<p style=\"margin:20px 0 30px 0;padding:0;font-size:12px;font-family:dotum\"><strong style=\"padding:0 7px 0 0;\">[출처]</strong> <a href=\"https://cafe.naver.com/joonggonara/741225252\" target=\"_blank\">이케아 확장형 테이블(VANGSTA), 의자 ADDE  판매합니다  (중고나라)</a> <span style=\"padding:0 7px 0 5px;\">|</span><strong style=\"padding:0 7px 0 0;\">작성자</strong> <a href=\"https://cafe.naver.com/joonggonara.cafe?iframe_url=/CafeMemberNetworkView.nhn%3Fm=view%26memberid=limjk987\" target=\"_blank\">lucasjk</a></p>" );</script>
+<div class="list-blog border-sub" id="post_741272498">
+<script>AutoSourcing.setString( "741272498", "<p style=\"margin:20px 0 30px 0;padding:0;font-size:12px;font-family:dotum\"><strong style=\"padding:0 7px 0 0;\">[출처]</strong> <a href=\"https://cafe.naver.com/joonggonara/741272498\" target=\"_blank\"> 배달의민족 3만원이상 주문 90프로로 팝니다  (중고나라)</a> <span style=\"padding:0 7px 0 5px;\">|</span><strong style=\"padding:0 7px 0 0;\">작성자</strong> <a href=\"https://cafe.naver.com/joonggonara.cafe?iframe_url=/CafeMemberNetworkView.nhn%3Fm=view%26memberid=skfkdi123123\" target=\"_blank\">모든다7</a></p>" );</script>
 <div class="inbox">
 <div class="tit-box">
 <div class="fl">
 <table border="0" cellpadding="0" cellspacing="0" role="presentation">
 <tr valign="top">
 <td>
-<span class="b m-tcol-c">이케아 확장형 테이블(VANGSTA), 의자 ADDE  판매합니다</span></td>
+<span class="b m-tcol-c"> 배달의민족 3만원이상 주문 90프로로 팝니다</span></td>
 <td class="m-tcol-c filter-30" nowrap="">|</td>
-<td class="m-tcol-c" nowrap=""><a class="m-tcol-c" href="https://cafe.naver.com/ArticleList.nhn?search.clubid=10050146&amp;search.menuid=1662&amp;search.boardtype=L&amp;userDisplay=" onclick="targetChangeForMacSafari('/ArticleList.nhn?search.clubid=10050146&amp;search.menuid=1662&amp;search.boardtype=L&amp;userDisplay=');return false;">이케아(IKEA)</a></td>
+<td class="m-tcol-c" nowrap=""><a class="m-tcol-c" href="https://cafe.naver.com/ArticleList.nhn?search.clubid=10050146&amp;search.menuid=1866&amp;search.boardtype=L&amp;userDisplay=" onclick="targetChangeForMacSafari('/ArticleList.nhn?search.clubid=10050146&amp;search.menuid=1866&amp;search.boardtype=L&amp;userDisplay=');return false;">식음료 상품권/쿠폰</a></td>
 </tr>
 </table>
 </div>
@@ -258,7 +258,7 @@ function controlTagClickEvent(e){
 <tbody>
 <tr>
 <td><img alt="전체공개" class="recomm" height="15" src="https://cafe.pstatic.net/cafe4/btn-permission-all.gif" width="42"/></td>
-<td class="m-tcol-c date">2020.04.20. 10:36</td>
+<td class="m-tcol-c date">2020.04.20. 12:04</td>
 </tr>
 </tbody>
 </table>
@@ -268,12 +268,14 @@ function controlTagClickEvent(e){
 <input name="m" type="hidden" value="modifyInArticle"/>
 <input name="cluburl" type="hidden" value="joonggonara"/>
 <input name="clubid" type="hidden" value="10050146"/>
-<input name="menuid" type="hidden" value="1662"/>
-<input name="articleid" type="hidden" value="741225252"/>
+<input name="menuid" type="hidden" value="1866"/>
+<input name="articleid" type="hidden" value="741272498"/>
 <input name="targetarticleheadid" type="hidden" value=""/>
 <div class="ly_sbjt" id="headListLayer" style="top:88px;left:15px">
 <ul>
 <li class="_rosRestrict" value="-1"><a href="javascript:checkLogin('updateHeadid', {targetHeadid:-1});"><span>말머리없음</span></a></li>
+<li class="_rosRestrict" value="1774"><a href="javascript:checkLogin('updateHeadid', {targetHeadid:1774});"><span>매입</span></a></li>
+<li class="_rosRestrict" value="1775"><a href="javascript:checkLogin('updateHeadid', {targetHeadid:1775});"><span>판매</span></a></li>
 </ul>
 </div>
 </form>
@@ -283,14 +285,14 @@ function controlTagClickEvent(e){
 <table border="0" cellpadding="0" cellspacing="0" role="presentation">
 <tr>
 <td class="m-tcol-c b nick">
-<table cellspacing="0" role="presentation"><tr><td class="pc2w"><a href="/CafeMemberNetworkView.nhn?m=view&amp;clubid=10050146&amp;memberid=limjk987"><img height="24" onerror="this.onerror='';this.src='https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png';" src="https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png" width="24"/></a></td><td class="p-nick"><a class="m-tcol-c b" href="#" onclick="ui(event, 'limjk987',3,'lucasjk','10050146','me', 'false', 'true', 'joonggonara', 'false', '1662'); return false;">lucasjk(limj****)</a></td></tr></table>
+<table cellspacing="0" role="presentation"><tr><td class="pc2w"><a href="/CafeMemberNetworkView.nhn?m=view&amp;clubid=10050146&amp;memberid=skfkdi123123"><img height="24" onerror="this.onerror='';this.src='https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png';" src="https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png" width="24"/></a></td><td class="p-nick"><a class="m-tcol-c b" href="#" onclick="ui(event, 'skfkdi123123',3,'모든다7','10050146','me', 'false', 'true', 'joonggonara', 'false', '1866'); return false;">모든다7(skfk****)</a></td></tr></table>
 </td>
 <td class="m-tcol-c step">
 <span class="filter-50">열심회원</span>
 <span><img border="0" class="levelico" src="https://cafe.pstatic.net/levelicon/1/1_110.gif"/></span>
 </td>
 <td class="m-tcol-c chat">
-<span><a href="#" onclick="oOneToOneChatLauncher.run('10050146', 'vxda7', 'limjk987');clickcr(this,'arc.chat', '', '', event);return false;"><img alt="1:1대화" class="ico" height="16" src="https://cafe.pstatic.net/cafe4/ico_chat_one_new.png" width="35"/></a></span>
+<span><a href="#" onclick="oOneToOneChatLauncher.run('10050146', 'vxda7', 'skfkdi123123');clickcr(this,'arc.chat', '', '', event);return false;"><img alt="1:1대화" class="ico" height="16" src="https://cafe.pstatic.net/cafe4/ico_chat_one_new.png" width="35"/></a></span>
 </td>
 </tr>
 </table>
@@ -299,12 +301,12 @@ function controlTagClickEvent(e){
 <table border="0" cellpadding="0" cellspacing="0" role="presentation">
 <tr>
 <td align="right" class="url" valign="top">
-<span class="filter-50"><a class="m-tcol-c url-txt" href="https://cafe.naver.com/joonggonara/741225252" id="linkUrl" target="_top">https://cafe.naver.com/joonggonara/741225252</a></span>
+<span class="filter-50"><a class="m-tcol-c url-txt" href="https://cafe.naver.com/joonggonara/741272498" id="linkUrl" target="_top">https://cafe.naver.com/joonggonara/741272498</a></span>
 <span><a class="_copyUrl url-btn" data-clipboard-action="copy" data-clipboard-target="#linkUrl" href="#" onclick="return false;"><img alt="주소복사" class="copy" height="15" src="https://cafe.pstatic.net/cafe4/btn-copy-add.gif" width="41"/></a></span>
 </td>
 </tr>
 <tr>
-<td align="right" class="m-tcol-c" id="sendPost_741225252"></td>
+<td align="right" class="m-tcol-c" id="sendPost_741272498"></td>
 </tr>
 </table>
 </div>
@@ -312,9 +314,7 @@ function controlTagClickEvent(e){
 <div class="atch_file_area">
 <div class="ly_atch_file" id="attachLayer" style="display:none;z-index:1001;top:15px;right:0;width:340px;">
 <ul>
-<script filename="의자.jpg" filesize="12826" fileurl="https://cafefiles.pstatic.net/MjAyMDA0MjBfMjY0/MDAxNTg3MzQ2NTQyMTg0.d9CcUVpiUkb_6CJSSPI2amdJiOTwkkTR6F8lEOWfFdYg.UR-XAS0XuIi3XhQFq79LbCxL8QFoUTTb-VUv3C_7rJEg.JPEG/의자.jpg" id="/MjAyMDA0MjBfMjY0/MDAxNTg3MzQ2NTQyMTg0.d9CcUVpiUkb_6CJSSPI2amdJiOTwkkTR6F8lEOWfFdYg.UR-XAS0XuIi3XhQFq79LbCxL8QFoUTTb-VUv3C_7rJEg.JPEG/의자.jpg" type="text/plain">1</script>
-<script filename="책상.jpg" filesize="15496" fileurl="https://cafefiles.pstatic.net/MjAyMDA0MjBfMTE0/MDAxNTg3MzQ2NTQyNzE5.ZZktbBfl9ipDgrKznlQBY9JTawnnMUFLUHnIkMH9FfIg.lgPbGiKDYSwHTouQhCOQIoJ94nyyLl95YyuhKAz6_pAg.JPEG/책상.jpg" id="/MjAyMDA0MjBfMTE0/MDAxNTg3MzQ2NTQyNzE5.ZZktbBfl9ipDgrKznlQBY9JTawnnMUFLUHnIkMH9FfIg.lgPbGiKDYSwHTouQhCOQIoJ94nyyLl95YyuhKAz6_pAg.JPEG/책상.jpg" type="text/plain">2</script>
-<script filename="21782777495.1.20200119012425.jpg" filesize="15645" fileurl="https://cafefiles.pstatic.net/MjAyMDA0MjBfNTIg/MDAxNTg3MzQ2NTc2MTY3.epfv-FlvzkApGYt6k3YUVyWqfLUpUGIurbc-o0Xt_Jcg.bmiZLR4uD222l0sfSEfjQ602hI1wYcx94mfpCnU3vvwg.JPEG/21782777495.1.20200119012425.jpg" id="/MjAyMDA0MjBfNTIg/MDAxNTg3MzQ2NTc2MTY3.epfv-FlvzkApGYt6k3YUVyWqfLUpUGIurbc-o0Xt_Jcg.bmiZLR4uD222l0sfSEfjQ602hI1wYcx94mfpCnU3vvwg.JPEG/21782777495.1.20200119012425.jpg" type="text/plain">3</script>
+<script filename="11111.jpg" filesize="17444" fileurl="https://cafefiles.pstatic.net/MjAyMDA0MThfMjY1/MDAxNTg3MjAyODEwNDgx.EJCHS1lxQ1lWtI3Zhzk5g7QVCk1KLuZ2L2oi3f6_duUg.xVXxClPVgMiLwEOxLz9yirSZ7a0Mx2wT57rGeU0hAWQg.JPEG/11111.jpg" id="/MjAyMDA0MThfMjY1/MDAxNTg3MjAyODEwNDgx.EJCHS1lxQ1lWtI3Zhzk5g7QVCk1KLuZ2L2oi3f6_duUg.xVXxClPVgMiLwEOxLz9yirSZ7a0Mx2wT57rGeU0hAWQg.JPEG/11111.jpg" type="text/plain">1</script>
 </ul>
 <a class="clse" href="#" onclick="oCL.hide('attachLayer');return false;"><span class="blind">닫기</span></a>
 </div>
@@ -406,7 +406,7 @@ function joinCafe() {
 }
 
 
-function purchaseGroupProduct_741225252() {
+function purchaseGroupProduct_741272498() {
 
     
     
@@ -417,7 +417,7 @@ function purchaseGroupProduct_741225252() {
 }
 
 
-function purchase_741225252() {
+function purchase_741272498() {
 
     
     
@@ -427,7 +427,7 @@ function purchase_741225252() {
     
         
         var purchaseQuantity = 1;
-        var purchaseUrl = "ItemPurchase.nhn?articleid=741225252&clubid=10050146&paymentCorp=&quantity=" + purchaseQuantity;
+        var purchaseUrl = "ItemPurchase.nhn?articleid=741272498&clubid=10050146&paymentCorp=&quantity=" + purchaseQuantity;
         open_window(purchaseUrl, 'Purchase', 400, 255, "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=1") ;
     
 
@@ -435,8 +435,8 @@ function purchase_741225252() {
 
 }
 
-function showPhoneNo_741225252(obj){
-	var articleId = '741225252';
+function showPhoneNo_741272498(obj){
+	var articleId = '741272498';
 	var ajax = new Ajax('/MarketItemOtn.nhn',{
 		method: 'POST',
 		suspend : true,
@@ -483,9 +483,9 @@ function showPhoneNo_741225252(obj){
  * @param {boolean} bLeftAlign : 클릭한 왼쪽 위치 기준 정렬
  * @param {boolean} bTopAlign : 클릭한 위쪽 위치 기준 정렬
  */
-function showConfirmLayer_741225252(obj, sLayerId, bLeftAlign, bTopAlign){
-	Element.hide('confirm_writenew_741225252');
-	Element.hide('confirm_soldout_741225252');
+function showConfirmLayer_741272498(obj, sLayerId, bLeftAlign, bTopAlign){
+	Element.hide('confirm_writenew_741272498');
+	Element.hide('confirm_soldout_741272498');
 
 	var elLayer = $( sLayerId );
 	var pos = Element.realPos(obj);
@@ -578,7 +578,7 @@ function showArticleLayer(elBtn, sLayerId) {
 			alert('숫자만 입력할 수 있습니다.');
 			return;
 		}
-		var ajax = new Ajax('/FraudSearch.nhn?keyword='+sKeyword+'&clubid='+sCafeId+'&type='+nType+'&token=RHpYNGNJcmdacW1uS3N5TjQ4MEU1dz09DQo',{
+		var ajax = new Ajax('/FraudSearch.nhn?keyword='+sKeyword+'&clubid='+sCafeId+'&type='+nType+'&token=aE5MRXoyc0t5ZGo1d3J5a3ladU4xUT09DQo',{
 			method: 'GET',
 			suspend : true,
 		    onLoad: function(res) {
@@ -671,15 +671,15 @@ function npayRemit(obj) {
 <tr>
 <th class="image" scope="row">
 <div class="image_condition">
-<img alt="" class="imgs border-sub" height="118" onclick="popview(this)" onerror="this.onerror='';this.src='https://ssl.pstatic.net/static/cafe/img_error_view.jpg'" src="https://cafefiles.pstatic.net/MjAyMDA0MjBfMjY0/MDAxNTg3MzQ2NTQyMTg0.d9CcUVpiUkb_6CJSSPI2amdJiOTwkkTR6F8lEOWfFdYg.UR-XAS0XuIi3XhQFq79LbCxL8QFoUTTb-VUv3C_7rJEg.JPEG/%25EC%259D%2598%25EC%259E%2590.jpg?type=s3" width="118"/>
+<img alt="" class="imgs border-sub" height="118" onclick="popview(this)" onerror="this.onerror='';this.src='https://ssl.pstatic.net/static/cafe/img_error_view.jpg'" src="https://cafefiles.pstatic.net/MjAyMDA0MThfMjY1/MDAxNTg3MjAyODEwNDgx.EJCHS1lxQ1lWtI3Zhzk5g7QVCk1KLuZ2L2oi3f6_duUg.xVXxClPVgMiLwEOxLz9yirSZ7a0Mx2wT57rGeU0hAWQg.JPEG/11111.jpg?type=s3" width="118"/>
 </div>
 </th>
 <td class="details">
 <div class="details-m">
 <em aria-label="판매" class="sp_end sale_now" role="img"></em>
-<p class="title">이케아 확장형 테이블(VANGSTA), 의자 ADDE  판매합니다</p>
+<p class="title">배달의민족 3만원이상 주문 90프로로 팝니다</p>
 <div class="prod_price">
-<span class="cost">100,000<span class="won">원</span></span>
+<span class="cost">2,000<span class="won">원</span></span>
 </div>
 <table cellpadding="0" cellspacing="0" class="d-list" role="presentation">
 <colgroup>
@@ -690,8 +690,10 @@ function npayRemit(obj) {
 <tr title="판매자정보">
 <th class="border-sub" scope="row">판매자정보</th>
 <td class="border-sub seller_info">
+<a class="m-tcol-c view_tel" href="#" id="bt_showPhoneNo" onclick="showPhoneNo_741272498(this); clickcr(this,'gdb.contact','','',event); return false;">안심번호 이용중</a>
+<span class="bar">|</span>
 <span class="seller_email">
-<a class="m-tcol-c" href="mailto:limjk987@naver.com" id="bt_email">limjk987@naver.com</a>
+<a class="m-tcol-c" href="mailto:skfkdi123123@naver.com" id="bt_email">skfkdi123123@naver.com</a>
 </span>
 <span class="safety_deal_buy">
 <button aria-label="안전거래 도움말" class="safety_deal_btn" onclick="showArticleLayer(this, 'sellerInfoShowGuide'); return false;"><span class="sp_end safety_deal_help" role="img"></span></button>
@@ -714,7 +716,7 @@ function npayRemit(obj) {
 </tbody>
 </table>
 <div class="pay_btns">
-<a class="npay_btn receive" data-amount="100000" data-articleid="741225252" data-cafeid="10050146" data-cafemember="true" data-loggedin="true" data-memberid="limjk987" data-nickname="lucasjk" onclick="npayRemit(this)" style="cursor: pointer;"><span class="blind">N Pay</span>수수료 없이 송금하기</a>
+<a class="npay_btn receive" data-amount="2000" data-articleid="741272498" data-cafeid="10050146" data-cafemember="true" data-loggedin="true" data-memberid="skfkdi123123" data-nickname="모든다7" onclick="npayRemit(this)" style="cursor: pointer;"><span class="blind">N Pay</span>수수료 없이 송금하기</a>
 </div>
 <div class="btns linenote border-sub">
 <span class="note">네이버페이 송금은 에스크로 기능이 제공되지 않으며,</span>
@@ -768,20 +770,12 @@ function npayRemit(obj) {
 </tr>
 </table>
 <div class="banner_add">
-<a banner="true" href="https://bit.ly/2y9a2th" onclick="clickcr(this, 'gdb.tban1', '', '', event);" target="_blank"><img alt="매니저 등록 배너" src="https://cafethumb.pstatic.net/MjAyMDA0MTBfMjIx/MDAxNTg2NTA2OTQzMjgz.sDsz12S6hBBZCPZHNWv_yXDLNqGfobgwK0DEDrT0Kp0g.kXVDom-b35LN9RUtXJBY0N5bLAGiDWO1WnwtD7ppNlkg.JPEG//%BC%D2%BF%F8%C5%C7%B9%E8%B3%CA%BC%D2%C0%E7.jpg?type=f740_120_banner"/></a>
+<a banner="true" href="http://bit.ly/2TtFRnF" onclick="clickcr(this, 'gdb.tban1', '', '', event);" target="_blank"><img alt="매니저 등록 배너" src="https://cafethumb.pstatic.net/MjAyMDAzMDJfMjg1/MDAxNTgzMTE0NjQ5Mzg5.4zpYOF-khGnNsEFBwPdwFQO1uLsDw7U75_0Jud5ldwQg.P8MUVs8u34T_aNxx1ylmS6ydws6lo2odxieDEymOrdsg.PNG//740_120.png?type=f740_120_banner"/></a>
 </div>
 <div class="notice_manager" id="noticeManagerArea">
 <div id="noticeContentArea">* 거래전 필독! 주의하세요!<br/>* 연락처가 없이 외부링크, 카카오톡, 댓글로만 거래할 때<br/>* 연락처 및 계좌번호를 사이버캅과 더치트로 꼭 조회해보기<br/>* 업체인 척 위장하여 신분증과 사업자등록증을 보내는 경우<br/>* 고가의 물품(휴대폰,전자기기)등만 판매하고 최근(1주일 내) 게시글만 있을 때<br/>* 해외직구로 면세받은 물품을 판매하는 행위는 불법입니다.</div>
 </div>
-
-					
-					
-
-					
-					
-					
-						
-						1. 이케아 확장형 테이블 (VANGSTA) 129,000원 -&gt; 6만원<div class="NHN_Writeform_Main"></div><div><br><img id="userImg1116901" name="cafeuserimg" onclick="popview(this)" src="https://cafeptthumb-phinf.pstatic.net/MjAyMDA0MjBfMTE0/MDAxNTg3MzQ2NTQyNzE5.ZZktbBfl9ipDgrKznlQBY9JTawnnMUFLUHnIkMH9FfIg.lgPbGiKDYSwHTouQhCOQIoJ94nyyLl95YyuhKAz6_pAg.JPEG/%EC%B1%85%EC%83%81.jpg?type=w740" style="width: 300px; height: 300px;"><img id="userImg1484583" name="cafeuserimg" onclick="popview(this)" src="https://cafeptthumb-phinf.pstatic.net/MjAyMDA0MjBfNTIg/MDAxNTg3MzQ2NTc2MTY3.epfv-FlvzkApGYt6k3YUVyWqfLUpUGIurbc-o0Xt_Jcg.bmiZLR4uD222l0sfSEfjQ602hI1wYcx94mfpCnU3vvwg.JPEG/21782777495.1.20200119012425.jpg?type=w740" style="width: 300px; height: 300px;"/></img></br></div><div><a href="https://search.shopping.naver.com/detail/lite.nhn?cat_id=50003256&amp;nv_mid=21782777495&amp;query=vangsta&amp;bt=0&amp;frm=NVSCPRO&amp;NaPm=ct%3Dk97svxd4%7Cci%3D7823d3aa59939d7193f31bbd5142288f073bd905%7Ctr%3Dsls%7Csn%3D95694%7Chk%3D00554bb2e145bcb95acc0e39b2c5a2576a34f540" target="_blank">https://search.shopping.naver.com/detail/lite.nhn?cat_id=50003256&amp;nv_mid=21782777495&amp;query=vangsta&amp;bt=0&amp;frm=NVSCPRO&amp;NaPm=ct%3Dk97svxd4%7Cci%3D7823d3aa59939d7193f31bbd5142288f073bd905%7Ctr%3Dsls%7Csn%3D95694%7Chk%3D00554bb2e145bcb95acc0e39b2c5a2576a34f540</a></div><div><br/></div><div><br/></div><div>2. 의자 (ADDE/블랙) 개당 7천원, 최대 4개 구매가능 (2개는 조립안된 새제품입니다.)</div><div><img id="userImg5312386" name="cafeuserimg" onclick="popview(this)" src="https://cafeptthumb-phinf.pstatic.net/MjAyMDA0MjBfMjY0/MDAxNTg3MzQ2NTQyMTg0.d9CcUVpiUkb_6CJSSPI2amdJiOTwkkTR6F8lEOWfFdYg.UR-XAS0XuIi3XhQFq79LbCxL8QFoUTTb-VUv3C_7rJEg.JPEG/%EC%9D%98%EC%9E%90.jpg?type=w740" style="width: 300px; height: 300px;font-size: 10pt;"/></div><div><a href="https://search.shopping.naver.com/detail/detail.nhn?cat_id=50003260&amp;nv_mid=13023833737&amp;query=adde&amp;bt=0&amp;frm=NVSCPRO&amp;NaPm=ct%3Dk97t31jc%7Cci%3D8d30258ffefb06d03f55278340e3ab31ab376b4e%7Ctr%3Dsls%7Csn%3D95694%7Chk%3D868f62a359f8210f0b2c42624a1cf6efc1bfff5f" target="_blank">https://search.shopping.naver.com/detail/detail.nhn?cat_id=50003260&amp;nv_mid=13023833737&amp;query=adde&amp;bt=0&amp;frm=NVSCPRO&amp;NaPm=ct%3Dk97t31jc%7Cci%3D8d30258ffefb06d03f55278340e3ab31ab376b4e%7Ctr%3Dsls%7Csn%3D95694%7Chk%3D868f62a359f8210f0b2c42624a1cf6efc1bfff5f</a></div><div><br/></div><div><br/></div><div>위치는 망원시장 근처이고 직접 가져가셔야 됩니다.</div><div><br/></div><div>문자 부탁드립니다.</div><div><br/></div><div>010-452삼-792삼</div>
+<div class="NHN_Writeform_Main" style="font-family: 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size: inherit; list-style: none; margin: 0px; padding: 0px; color: rgb(34, 34, 34);">ted1282 , thdrlwjd92 , thdrlwjd95 모든다 , 모든다5 등 검색해보시면</div><div class="NHN_Writeform_Main" style="font-family: 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size: inherit; list-style: none; margin: 0px; padding: 0px; color: rgb(34, 34, 34);">최다 거래내역이고 최고거래입니다 신용 </div><div class="NHN_Writeform_Main" style="font-family: 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size: inherit; list-style: none; margin: 0px; padding: 0px; color: rgb(34, 34, 34);">3월부터 바뀐 정책 게시글 5회 초과로 30일 글 쓰기정지당해서</div><div class="NHN_Writeform_Main" style="font-family: 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size: inherit; list-style: none; margin: 0px; padding: 0px; color: rgb(34, 34, 34);">이아이디를 잠시 씁니다</div><div class="NHN_Writeform_Main" style="font-family: 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size: inherit; list-style: none; margin: 0px; padding: 0px; color: rgb(34, 34, 34);"><br/></div><div class="NHN_Writeform_Main" style="font-family: 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size: inherit; list-style: none; margin: 0px; padding: 0px; color: rgb(34, 34, 34);"><br/></div><div class="NHN_Writeform_Main" style="font-family: 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size: inherit; list-style: none; margin: 0px; padding: 0px; color: rgb(34, 34, 34);">배달의민족 3만원이상 주문 90프로로 팝니다</div><div class="NHN_Writeform_Main" style="font-family: 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size: inherit; list-style: none; margin: 0px; padding: 0px; color: rgb(34, 34, 34);">바로바로 주문가능합니다</div><div class="NHN_Writeform_Main" style="font-family: 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size: inherit; list-style: none; margin: 0px; padding: 0px; color: rgb(34, 34, 34);">수량많습니다</div><div class="NHN_Writeform_Main" style="font-family: 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size: inherit; list-style: none; margin: 0px; padding: 0px; color: rgb(34, 34, 34);">최다거래내역입니다</div><div class="NHN_Writeform_Main" style="font-family: 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size: inherit; list-style: none; margin: 0px; padding: 0px; color: rgb(34, 34, 34);">010  2356 6987  문자주세요</div><div class="NHN_Writeform_Main" style="font-family: 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size: inherit; list-style: none; margin: 0px; padding: 0px; color: rgb(34, 34, 34);"><img id="userImg8801922" name="cafeuserimg" onclick="popview(this)" src="https://cafeptthumb-phinf.pstatic.net/MjAyMDA0MThfMjY1/MDAxNTg3MjAyODEwNDgx.EJCHS1lxQ1lWtI3Zhzk5g7QVCk1KLuZ2L2oi3f6_duUg.xVXxClPVgMiLwEOxLz9yirSZ7a0Mx2wT57rGeU0hAWQg.JPEG/11111.jpg?type=w740" style="width: 365px; height: 365px;"><br/></img></div><div class="NHN_Writeform_Main"></div>
 </div>
 <table cellspacing="0" class="tag_n_id tag_list_area" role="presentation">
 <tbody>
@@ -792,10 +786,10 @@ function npayRemit(obj) {
 </tbody>
 </table>
 <div class="pay_btns end_bottom">
-<a class="npay_btn receive" data-amount="100000" data-articleid="741225252" data-cafeid="10050146" data-cafemember="true" data-loggedin="true" data-memberid="limjk987" data-nickname="lucasjk" onclick="npayRemit(this)" style="cursor: pointer;"><span class="blind">N Pay</span>수수료 없이 송금하기</a>
+<a class="npay_btn receive" data-amount="2000" data-articleid="741272498" data-cafeid="10050146" data-cafemember="true" data-loggedin="true" data-memberid="skfkdi123123" data-nickname="모든다7" onclick="npayRemit(this)" style="cursor: pointer;"><span class="blind">N Pay</span>수수료 없이 송금하기</a>
 </div>
 <div class="banner_add bottom" style="width:744px; padding-left:43px; padding-right:43px; margin-right:0px;">
-<a banner="true" href="https://bit.ly/2y9a2th" onclick="clickcr(this, 'gdb.bban1', '', '', event);" target="_blank"><img alt="매니저 등록 배너" src="https://cafethumb.pstatic.net/MjAyMDA0MTBfMTQg/MDAxNTg2NTA2OTU0NzQ3.5TvwL5BFVy2njDq1WIUYw4zH70n36M-LYFzivv_jwPEg.qYuED4xYp6qdqJNOnkivil1lDzwzStvSV2DTBWSXWj8g.JPEG//%BC%D2%BF%F8%C5%C7%B9%E8%B3%CA%BC%D2%C0%E7.jpg?type=f740_120_banner"/></a>
+<a banner="true" href="http://bit.ly/2TtFRnF" onclick="clickcr(this, 'gdb.bban1', '', '', event);" target="_blank"><img alt="매니저 등록 배너" src="https://cafethumb.pstatic.net/MjAyMDAzMDJfMjE1/MDAxNTgzMTE0NjU3MjM3.JjgC2yy7LAeGrB9Vs4KsLb9y1LcrXlBJRyu3jF7UQ_8g.gEVxb75jf6WRzBTqhRyRkst-WPToyq4f7DgAFZq8ZgUg.PNG//740_120.png?type=f740_120_banner"/></a>
 </div>
 <table cellspacing="0" class="tag_n_id" role="presentation">
 <tbody>
@@ -803,7 +797,7 @@ function npayRemit(obj) {
 <td> </td>
 <td class="idarea">
 <div class="other_view m-tcol-c">
-<a class="more m-tcol-c _rosRestrict" href="/CafeMemberNetworkView.nhn?m=view&amp;clubid=10050146&amp;memberid=limjk987" onclick="clickcr(this, 'art.profile', '', '', event)">이 작성자의 게시글 더보기</a>
+<a class="more m-tcol-c _rosRestrict" href="/CafeMemberNetworkView.nhn?m=view&amp;clubid=10050146&amp;memberid=skfkdi123123" onclick="clickcr(this, 'art.profile', '', '', event)">이 작성자의 게시글 더보기</a>
 </div>
 <table align="right" cellpadding="0" cellspacing="0" role="presentation">
 <colgroup><col/><col width="55"/></colgroup>
@@ -837,16 +831,6 @@ function npayRemit(obj) {
 </td>
 <td class="m-tcol-c filter-30">|</td>
 <td><span class="b m-tcol-c reply">조회수 </span><span class="b m-tcol-c reply">0</span></td>
-<td class="m-tcol-c filter-30">|</td>
-<td>
-<a class="b m-tcol-c like like_lst_btn _click(LikeItMember|LikeItMember|10050146|741225252) _stopDefault" href="#" id="likeItMemberBtn" onclick="clickcr(this, '', '', ''); return false;">좋아요<span id="cafe-menu"><span class="cafe-menu-tit" style="background:none; width:13px; height:13px; margin:0;"><span class="down-btn" id="likeItArrow" style="background-position:0 0; *background-position:0 0; background-repeat:no-repeat; vertical-align:top"><img alt="" height="13" src="https://cafe.pstatic.net/cafe4/hidden.gif" width="13"/></span></span></span></a>
-<div class="u_likeit_list_module _reactionModule" data-catgid="10050146" data-cid="10050146_joonggonara_741225252" data-did="CAFE" data-sid="CAFE">
-<a class="u_likeit_list_btn _button" data-log="art.like|art.unlike" data-type="like" href="#">
-<span class="u_ico _icon"></span>
-<em class="u_cnt _count"></em>
-</a>
-</div>
-</td>
 </tr>
 </tbody>
 </table>
@@ -855,7 +839,7 @@ function npayRemit(obj) {
 <table border="0" cellpadding="0" cellspacing="0" role="presentation">
 <tr>
 <td>
-<div class="naver-splugin" data-blog-proxy-url="https://cafe.naver.com/CafeScrapContent.nhn?clubid=10050146&amp;articleid=741225252&amp;type=blog" data-blog-source-title="이케아 확장형 테이블(VANGSTA), 의자 ADDE  판매합니다" data-blog-source-type="111" data-cafe-proxy-url="https://cafe.naver.com/CafeScrapContent.nhn?clubid=10050146&amp;articleid=741225252&amp;type=cafe" data-cafe-source-title="이케아 확장형 테이블(VANGSTA), 의자 ADDE  판매합니다" data-cafe-source-type="111" data-likecontentsid="10050146_joonggonara_741225252" data-likeserviceid="CAFE" data-me-display="off" data-oninitialize="splugin_oninitialize();" data-option="{textClass: 'm-tcol-c', align: 'right', onLoginRedirect: parent.openLoginLayer}" data-style="type_c" data-title="이케아 확장형 테이블(VANGSTA), 의자 ADDE  판매합니다" data-url="https://cafe.naver.com/joonggonara/741225252" id="spiButton">
+<div class="naver-splugin" data-blog-proxy-url="https://cafe.naver.com/CafeScrapContent.nhn?clubid=10050146&amp;articleid=741272498&amp;type=blog" data-blog-source-title="배달의민족 3만원이상 주문 90프로로 팝니다" data-blog-source-type="111" data-cafe-proxy-url="https://cafe.naver.com/CafeScrapContent.nhn?clubid=10050146&amp;articleid=741272498&amp;type=cafe" data-cafe-source-title="배달의민족 3만원이상 주문 90프로로 팝니다" data-cafe-source-type="111" data-likecontentsid="10050146_joonggonara_741272498" data-likeserviceid="CAFE" data-me-display="off" data-oninitialize="splugin_oninitialize();" data-option="{textClass: 'm-tcol-c', align: 'right', onLoginRedirect: parent.openLoginLayer}" data-style="type_c" data-title="배달의민족 3만원이상 주문 90프로로 팝니다" data-url="https://cafe.naver.com/joonggonara/741272498" id="spiButton">
 </div>
 </td>
 <td class="m-tcol-c filter-30">|</td>
@@ -868,7 +852,7 @@ function npayRemit(obj) {
 </table>
 </div>
 </div>
-<div class="box-reply2 bg-color u_cbox" id="gQ0mW" style="display:none;">
+<div class="box-reply2 bg-color u_cbox" id="5H9P3" style="display:none;">
 <!-- 댓글 리스트  -->
 <ul class="cmlist" id="cmt_list"></ul>
 <div style="clear: both; height: 0pt; font: 0pt/0pt arial;"></div>
@@ -913,7 +897,7 @@ function npayRemit(obj) {
 </li>
 <li>
 <div class="u_cbox_btn_upload_photo">
-<div class="_imageBtn u_cbox_btn_file"><label for="attachImageBtn741225252" onclick="clickcr(this,'cmt.image', '', '', event);">업로드</label><input accept="Image/*" id="attachImageBtn741225252" type="file"/></div>
+<div class="_imageBtn u_cbox_btn_file"><label for="attachImageBtn741272498" onclick="clickcr(this,'cmt.image', '', '', event);">업로드</label><input accept="Image/*" id="attachImageBtn741272498" type="file"/></div>
 <span class="u_cbox_ico_upload_photo"></span>
 <span class="m-tcol-c u_cbox_txt_upload_photo">사진</span>
 </div>
@@ -1023,28 +1007,28 @@ try{
 <td class="prev_btn"><a class="m-tcol-c" href="#" onclick="goPrev();clickcr(this,'art.prev','','',event);"><img alt="" src="https://cafe.pstatic.net/cafe4/ico-btn-pre2_.gif"/>이전글</a></td>
 <td align="left" class="board-list">
 <span class="aaa">
-<a class="m-tcol-c" href="#" onclick="goPrev();clickcr(this,'art.prev','','',event);">왕 싼 가격 냉장고 세탁기 에어컨 방문 환영 연락주세요~!</a>
+<a class="m-tcol-c" href="#" onclick="goPrev();clickcr(this,'art.prev','','',event);">■4월 드디어 기다리던  최저가격~!■갤럭시s20 9만원대~■노트10 5만원대~!■일일 50대 한정■</a>
 <input class="list-i-selling" readonly="readonly" title="판매" type="text"/>
 <input class="list-i-img" readonly="readonly" title="사진" type="text"/>
 <input class="list-i-new" readonly="readonly" title="new" type="text"/>
 </span>
 </td>
-<td align="left"><div class="pers_nick_area"><table cellspacing="0" role="presentation"><tr><td class="p-nick"><a class="m-tcol-c" href="#" onclick="ui(event, 'khb5007',3,'내가 판매아 19','10050146','me', 'false', 'true', 'joonggonara', 'false', '452'); return false;">내가 판매아 19</a><span class="mem-level"></span></td></tr></table></div><script type="text/javascript">wordBreak($("refarticle_prevSiblingContent"));</script></td>
-<td class="view-count m-tcol-c">10:36</td>
+<td align="left"><div class="pers_nick_area"><table cellspacing="0" role="presentation"><tr><td class="p-nick"><a class="m-tcol-c" href="#" onclick="ui(event, 'baron033',3,'baron033','10050146','me', 'false', 'true', 'joonggonara', 'false', '1477'); return false;">baron033</a><span class="mem-level"></span></td></tr></table></div><script type="text/javascript">wordBreak($("refarticle_prevSiblingContent"));</script></td>
+<td class="view-count m-tcol-c">12:04</td>
 </tr>
 <tr><td class="board-line" colspan="4"></td></tr>
 <tr align="center">
 <td class="prev_btn"><a class="m-tcol-c" href="#" onclick="goNext();clickcr(this,'art.next','','',event);"><img alt="" src="https://cafe.pstatic.net/cafe4/ico-btn-net2_.gif"/>다음글</a></td>
 <td align="left" class="board-list">
 <span class="aaa">
-<a class="m-tcol-c" href="#" onclick="goNext();clickcr(this,'art.next','','',event);">롯데월드 종합이용권 종일권 / 오후권 팝니다</a>
+<a class="m-tcol-c" href="#" onclick="goNext();clickcr(this,'art.next','','',event);">제일복권) 몬스터헌터, 나히아, 드래곤볼, 원피스, 에반게리온, 세일러문, 체리, 페이트, 시원찮은, 전생슬, 마이펫 등 미개봉 처분</a>
 <input class="list-i-selling" readonly="readonly" title="판매" type="text"/>
 <input class="list-i-img" readonly="readonly" title="사진" type="text"/>
 <input class="list-i-new" readonly="readonly" title="new" type="text"/>
 </span>
 </td>
-<td align="left"><div class="pers_nick_area"><table cellspacing="0" role="presentation"><tr><td class="p-nick"><a class="m-tcol-c" href="#" onclick="ui(event, 'lovehgh1',3,'Oo로티oO','10050146','me', 'false', 'true', 'joonggonara', 'false', '1465'); return false;">Oo로티oO</a><span class="mem-level"></span></td></tr></table></div><script type="text/javascript">wordBreak($("refarticle_nextSiblingContent"));</script></td>
-<td class="view-count m-tcol-c">10:36
+<td align="left"><div class="pers_nick_area"><table cellspacing="0" role="presentation"><tr><td class="p-nick"><a class="m-tcol-c" href="#" onclick="ui(event, 'yso9770',3,'렛씽투','10050146','me', 'false', 'true', 'joonggonara', 'false', '1511'); return false;">렛씽투</a><span class="mem-level"></span></td></tr></table></div><script type="text/javascript">wordBreak($("refarticle_nextSiblingContent"));</script></td>
+<td class="view-count m-tcol-c">12:04
 				</td>
 </tr>
 <tr><td class="board-line" colspan="4"></td></tr>
@@ -1053,10 +1037,10 @@ try{
 <div class="h-33"></div>
 <div class="group-tit">
 <div class="fl">
-<h4 class="tcol-t">'<strong class="m-tcol-p">이케아 확장형 테이블(VANGSTA), 의자 ADDE  판매합니다</strong>'에 대한 카페검색글</h4>
+<h4 class="tcol-t">'<strong class="m-tcol-p">배달의민족 3만원이상 주문 90프로로 팝니다</strong>'에 대한 카페검색글</h4>
 </div>
 <div class="fr">
-<p><a class="m-tcol-c" href="/ArticleSearchList.nhn?search.clubid=10050146&amp;search.searchBy=0&amp;search.sortBy=sim&amp;search.query=%C0%CC%C4%C9%BE%C6+%C8%AE%C0%E5%C7%FC+%C5%D7%C0%CC%BA%ED%28VANGSTA%29%2C+%C0%C7%C0%DA+ADDE++%C6%C7%B8%C5%C7%D5%B4%CF%B4%D9" onclick="clickcr(this, 'cnx.more','','',event);">더보기</a></p>
+<p><a class="m-tcol-c" href="/ArticleSearchList.nhn?search.clubid=10050146&amp;search.searchBy=0&amp;search.sortBy=sim&amp;search.query=%B9%E8%B4%DE%C0%C7%B9%CE%C1%B7+3%B8%B8%BF%F8%C0%CC%BB%F3+%C1%D6%B9%AE+90%C7%C1%B7%CE%B7%CE+%C6%CB%B4%CF%B4%D9" onclick="clickcr(this, 'cnx.more','','',event);">더보기</a></p>
 </div>
 </div>
 <div class="h-12"></div>
@@ -1068,37 +1052,16 @@ try{
 <tr align="center">
 <td align="left" class="board-list">
 <span class="aaa">
-<a class="m-tcol-c" href="https://cafe.naver.com/ArticleRead.nhn?clubid=10050146&amp;articleid=737850472&amp;art=aW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtc2VhcmNoLWxpc3Q.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjczNzg1MDQ3MiwiaXNzdWVkQXQiOjE1ODczNDY1ODQzOTIsImNhZmVJZCI6MTAwNTAxNDZ9._DfIyGEqX4qf5jkRK5PVjSo15wZkfLz_qUmsW08gMrY&amp;query=%C0%CC%C4%C9%BE%C6+%C8%AE%C0%E5%C7%FC+%C5%D7%C0%CC%BA%ED%28VANGSTA%29%2C+%C0%C7%C0%DA+ADDE++%C6%C7%B8%C5%C7%D5%B4%CF%B4%D9&amp;marketSearch=true" onclick="clickcr(this, 'cnx.list','','',event);"><b>이케아</b> <b>테이블</b>, 식탁, 시계, <b>의자</b> 등 <b>판매합니다</b>.</a>
-<input class="list-i-sellout" readonly="readonly" title="완료" type="text"/>
-<input class="list-i-img" readonly="readonly" title="사진" type="text"/>
-<span class="m-tcol-p num">[<strong>7</strong>]</span>
-</span>
-</td>
-<td align="left">
-<ch:member blank="false" memberid="kevin0991" menuid="1662" nickname="keane16" personacon="0" smallpersonacon="true" uicssclass="m-tcol-c"></ch:member>
-</td>
-<td class="view-count m-tcol-c">
-			2020.04.13.
-		</td>
-</tr>
-<tr>
-<td class="board-line" colspan="4">
-</td>
-</tr>
-<tr align="center">
-<td align="left" class="board-list">
-<span class="aaa">
-<a class="m-tcol-c" href="https://cafe.naver.com/ArticleRead.nhn?clubid=10050146&amp;articleid=692798590&amp;art=aW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtc2VhcmNoLWxpc3Q.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjY5Mjc5ODU5MCwiaXNzdWVkQXQiOjE1ODczNDY1ODQzOTIsImNhZmVJZCI6MTAwNTAxNDZ9.IOCMUx3wWPZtM-gYMW0LLe1ssnXlsqTq6TAhAPSVfSo&amp;query=%C0%CC%C4%C9%BE%C6+%C8%AE%C0%E5%C7%FC+%C5%D7%C0%CC%BA%ED%28VANGSTA%29%2C+%C0%C7%C0%DA+ADDE++%C6%C7%B8%C5%C7%D5%B4%CF%B4%D9&amp;marketSearch=true" onclick="clickcr(this, 'cnx.list','','',event);"><b>이케아</b> 방스타 <b>VANGSTA</b> <b>확장형테이블</b> 화이트 + 테오도레스 <b>의자</b> 2개</a>
+<a class="m-tcol-c" href="https://cafe.naver.com/ArticleRead.nhn?clubid=10050146&amp;articleid=354389397&amp;art=aW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtc2VhcmNoLWxpc3Q.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjM1NDM4OTM5NywiaXNzdWVkQXQiOjE1ODczNTg4ODU0ODcsImNhZmVJZCI6MTAwNTAxNDZ9.vSX_ZC1bOFb7WbayD9sfVO6QyR6GCzQ2qeBZInCDaqE&amp;query=%B9%E8%B4%DE%C0%C7%B9%CE%C1%B7+3%B8%B8%BF%F8%C0%CC%BB%F3+%C1%D6%B9%AE+90%C7%C1%B7%CE%B7%CE+%C6%CB%B4%CF%B4%D9&amp;marketSearch=true" onclick="clickcr(this, 'cnx.list','','',event);">롯데월드 자유이용권/롯데월드 아쿠아리움/<b>배달의민족</b> 신규 치킨 5000원 할인쿠폰/파리바게뜨 29000원권,26000원권/뚜레쥬르 25000원권,23000원권,21000원권/롯데마트 10000원권/롯데인터넷면세점 적립금 30000원</a>
 <input class="list-i-selling" readonly="readonly" title="판매" type="text"/>
-<input class="list-i-img" readonly="readonly" title="사진" type="text"/>
-<span class="m-tcol-p num">[<strong>3</strong>]</span>
+<span class="m-tcol-p num">[<strong>2</strong>]</span>
 </span>
 </td>
 <td align="left">
-<ch:member blank="false" memberid="beegeesos" menuid="1662" nickname="워니" personacon="0" smallpersonacon="true" uicssclass="m-tcol-c"></ch:member>
+<ch:member blank="false" memberid="goddns1269" menuid="448" nickname="인터쓰텔라" personacon="0" smallpersonacon="true" uicssclass="m-tcol-c"></ch:member>
 </td>
 <td class="view-count m-tcol-c">
-			2020.01.08.
+			2016.12.29.
 		</td>
 </tr>
 <tr>
@@ -1108,16 +1071,16 @@ try{
 <tr align="center">
 <td align="left" class="board-list">
 <span class="aaa">
-<a class="m-tcol-c" href="https://cafe.naver.com/ArticleRead.nhn?clubid=10050146&amp;articleid=740023788&amp;art=aW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtc2VhcmNoLWxpc3Q.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjc0MDAyMzc4OCwiaXNzdWVkQXQiOjE1ODczNDY1ODQzOTMsImNhZmVJZCI6MTAwNTAxNDZ9.fyiRS3ICLdusTfS5qiWw4VlvkGrjrYB8MP3Uw3oudNU&amp;query=%C0%CC%C4%C9%BE%C6+%C8%AE%C0%E5%C7%FC+%C5%D7%C0%CC%BA%ED%28VANGSTA%29%2C+%C0%C7%C0%DA+ADDE++%C6%C7%B8%C5%C7%D5%B4%CF%B4%D9&amp;marketSearch=true" onclick="clickcr(this, 'cnx.list','','',event);"><b>이케아</b> <b>테이블</b>, 식탁, 시계, <b>의자</b> 등 <b>판매합니다</b>.</a>
+<a class="m-tcol-c" href="https://cafe.naver.com/ArticleRead.nhn?clubid=10050146&amp;articleid=307002358&amp;art=aW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtc2VhcmNoLWxpc3Q.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjMwNzAwMjM1OCwiaXNzdWVkQXQiOjE1ODczNTg4ODU0ODcsImNhZmVJZCI6MTAwNTAxNDZ9.Voq95zFfs5nn7DNm5Yc4zJzlFhCNWii0qAXU5ztc3yU&amp;query=%B9%E8%B4%DE%C0%C7%B9%CE%C1%B7+3%B8%B8%BF%F8%C0%CC%BB%F3+%C1%D6%B9%AE+90%C7%C1%B7%CE%B7%CE+%C6%CB%B4%CF%B4%D9&amp;marketSearch=true" onclick="clickcr(this, 'cnx.list','','',event);">초s급 디그레이맨, 각종 라이트노벨, 만화책, 오나의 여신님 작다는 건 편리해 dvd, 포스터 <b>팝니다</b>.</a>
 <input class="list-i-selling" readonly="readonly" title="판매" type="text"/>
 <input class="list-i-img" readonly="readonly" title="사진" type="text"/>
 </span>
 </td>
 <td align="left">
-<ch:member blank="false" memberid="kevin0991" menuid="1662" nickname="keane16" personacon="0" smallpersonacon="true" uicssclass="m-tcol-c"></ch:member>
+<ch:member blank="false" memberid="kcw16013" menuid="460" nickname="후앙흐히힛2" personacon="0" smallpersonacon="true" uicssclass="m-tcol-c"></ch:member>
 </td>
 <td class="view-count m-tcol-c">
-			2020.04.17.
+			2016.02.28.
 		</td>
 </tr>
 <tr>
@@ -1127,16 +1090,16 @@ try{
 <tr align="center">
 <td align="left" class="board-list">
 <span class="aaa">
-<a class="m-tcol-c" href="https://cafe.naver.com/ArticleRead.nhn?clubid=10050146&amp;articleid=739383416&amp;art=aW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtc2VhcmNoLWxpc3Q.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjczOTM4MzQxNiwiaXNzdWVkQXQiOjE1ODczNDY1ODQzOTMsImNhZmVJZCI6MTAwNTAxNDZ9.GQM7F0ZCX7DakbQ_C13Hvb67fuwBaR1AijvL4lWoelM&amp;query=%C0%CC%C4%C9%BE%C6+%C8%AE%C0%E5%C7%FC+%C5%D7%C0%CC%BA%ED%28VANGSTA%29%2C+%C0%C7%C0%DA+ADDE++%C6%C7%B8%C5%C7%D5%B4%CF%B4%D9&amp;marketSearch=true" onclick="clickcr(this, 'cnx.list','','',event);"><b>이케아</b> <b>테이블</b>, 식탁, 시계, <b>의자</b> 등 <b>판매합니다</b>.</a>
-<input class="list-i-sellout" readonly="readonly" title="완료" type="text"/>
+<a class="m-tcol-c" href="https://cafe.naver.com/ArticleRead.nhn?clubid=10050146&amp;articleid=307085421&amp;art=aW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtc2VhcmNoLWxpc3Q.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjMwNzA4NTQyMSwiaXNzdWVkQXQiOjE1ODczNTg4ODU0ODgsImNhZmVJZCI6MTAwNTAxNDZ9.-Bbh9O8yqRawotAqA6XSAJ-H15RSTgx1e2Ewim7t7os&amp;query=%B9%E8%B4%DE%C0%C7%B9%CE%C1%B7+3%B8%B8%BF%F8%C0%CC%BB%F3+%C1%D6%B9%AE+90%C7%C1%B7%CE%B7%CE+%C6%CB%B4%CF%B4%D9&amp;marketSearch=true" onclick="clickcr(this, 'cnx.list','','',event);">초s급 디그레이맨, 각종 라이트노벨, 만화책, 오나의 여신님 작다는 건 편리해 dvd, 포스터 <b>팝니다</b>.</a>
+<input class="list-i-selling" readonly="readonly" title="판매" type="text"/>
 <input class="list-i-img" readonly="readonly" title="사진" type="text"/>
 </span>
 </td>
 <td align="left">
-<ch:member blank="false" memberid="kevin0991" menuid="1662" nickname="keane16" personacon="0" smallpersonacon="true" uicssclass="m-tcol-c"></ch:member>
+<ch:member blank="false" memberid="kcw16013" menuid="460" nickname="후앙흐히힛2" personacon="0" smallpersonacon="true" uicssclass="m-tcol-c"></ch:member>
 </td>
 <td class="view-count m-tcol-c">
-			2020.04.16.
+			2016.02.28.
 		</td>
 </tr>
 <tr>
@@ -1146,17 +1109,35 @@ try{
 <tr align="center">
 <td align="left" class="board-list">
 <span class="aaa">
-<a class="m-tcol-c" href="https://cafe.naver.com/ArticleRead.nhn?clubid=10050146&amp;articleid=738465923&amp;art=aW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtc2VhcmNoLWxpc3Q.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjczODQ2NTkyMywiaXNzdWVkQXQiOjE1ODczNDY1ODQzOTMsImNhZmVJZCI6MTAwNTAxNDZ9.PaSiCWnut0sylGTKH49tSGI2iF_LLoKtUrxptvz-fPo&amp;query=%C0%CC%C4%C9%BE%C6+%C8%AE%C0%E5%C7%FC+%C5%D7%C0%CC%BA%ED%28VANGSTA%29%2C+%C0%C7%C0%DA+ADDE++%C6%C7%B8%C5%C7%D5%B4%CF%B4%D9&amp;marketSearch=true" onclick="clickcr(this, 'cnx.list','','',event);"><b>이케아</b> <b>테이블</b>, 식탁, 시계, <b>의자</b> 등 <b>판매합니다</b>.</a>
-<input class="list-i-sellout" readonly="readonly" title="완료" type="text"/>
+<a class="m-tcol-c" href="https://cafe.naver.com/ArticleRead.nhn?clubid=10050146&amp;articleid=308310814&amp;art=aW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtc2VhcmNoLWxpc3Q.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjMwODMxMDgxNCwiaXNzdWVkQXQiOjE1ODczNTg4ODU0ODgsImNhZmVJZCI6MTAwNTAxNDZ9.F7yA1wFZwvIY1z6w2rBpqZnBcRoruOj2cpEqfd_PDMk&amp;query=%B9%E8%B4%DE%C0%C7%B9%CE%C1%B7+3%B8%B8%BF%F8%C0%CC%BB%F3+%C1%D6%B9%AE+90%C7%C1%B7%CE%B7%CE+%C6%CB%B4%CF%B4%D9&amp;marketSearch=true" onclick="clickcr(this, 'cnx.list','','',event);">초s급 디그레이맨, 각종 라이트노벨, 만화책 dvd 단권들 떨이 판매중</a>
+<input class="list-i-selling" readonly="readonly" title="판매" type="text"/>
 <input class="list-i-img" readonly="readonly" title="사진" type="text"/>
+</span>
+</td>
+<td align="left">
+<ch:member blank="false" memberid="kcw16013" menuid="460" nickname="후앙흐히힛2" personacon="0" smallpersonacon="true" uicssclass="m-tcol-c"></ch:member>
+</td>
+<td class="view-count m-tcol-c">
+			2016.03.07.
+		</td>
+</tr>
+<tr>
+<td class="board-line" colspan="4">
+</td>
+</tr>
+<tr align="center">
+<td align="left" class="board-list">
+<span class="aaa">
+<a class="m-tcol-c" href="https://cafe.naver.com/ArticleRead.nhn?clubid=10050146&amp;articleid=147802123&amp;art=aW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtc2VhcmNoLWxpc3Q.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjE0NzgwMjEyMywiaXNzdWVkQXQiOjE1ODczNTg4ODU0ODgsImNhZmVJZCI6MTAwNTAxNDZ9.S_k9PD8bov4lXmNw0rgji4mqQmyU3bI65iDzXsC_Fb8&amp;query=%B9%E8%B4%DE%C0%C7%B9%CE%C1%B7+3%B8%B8%BF%F8%C0%CC%BB%F3+%C1%D6%B9%AE+90%C7%C1%B7%CE%B7%CE+%C6%CB%B4%CF%B4%D9&amp;marketSearch=true" onclick="clickcr(this, 'cnx.list','','',event);">마이크로스타즈, 프로스타즈 축구선수 피규어 <b>팝니다</b>.</a>
+<input class="list-i-sellout" readonly="readonly" title="완료" type="text"/>
 <span class="m-tcol-p num">[<strong>1</strong>]</span>
 </span>
 </td>
 <td align="left">
-<ch:member blank="false" memberid="kevin0991" menuid="1662" nickname="keane16" personacon="0" smallpersonacon="true" uicssclass="m-tcol-c"></ch:member>
+<ch:member blank="false" memberid="magnunum" menuid="447" nickname="마그누넘" personacon="0" smallpersonacon="true" uicssclass="m-tcol-c"></ch:member>
 </td>
 <td class="view-count m-tcol-c">
-			2020.04.14.
+			2013.02.02.
 		</td>
 </tr>
 <tr>
@@ -1245,10 +1226,10 @@ try{
             advertKeyword = "null";
             title = "";
         } else if (pageFrom === "ArticleRead") {
-            title = "이케아 확장형 테이블(VANGSTA), 의자 ADDE  판매합니다";
-            articleGdId = "90000004_00995A622C2E332400000000";
-            articleId = "741225252";
-            menuId = "1662";
+            title = " 배달의민족 3만원이상 주문 90프로로 팝니다";
+            articleGdId = "90000004_00995A622C2EEBB200000000";
+            articleId = "741272498";
+            menuId = "1866";
             advertKeyword = "";
         }
 
@@ -1324,10 +1305,10 @@ try{
             language: navigator.language,
             os: oGroupSSPAdvertFinder.os(),
             cafeId: cafeId,
-            postId: "741225252"
+            postId: "741272498"
         };
 
-        oGroupSSPAdvertFinder.findWithDA(daGroupSSPUrl, daGroupSSPRequestParameter, "741225252", spwp, null);
+        oGroupSSPAdvertFinder.findWithDA(daGroupSSPUrl, daGroupSSPRequestParameter, "741272498", spwp, null);
     };
 
     if (window.addEventListener) {
@@ -1340,7 +1321,7 @@ try{
 </script>
 <div id="powerAd-div">
 <script>
-        var rqc = 23858513;
+        var rqc = 45457760;
         spwp.cmd.push(function () {
             spwp.renderAd("powerAd-div");
         });
@@ -1354,16 +1335,16 @@ var oGroupSSPAdvertReporter = new cafe.GroupSSP.Advert.Reporter();
 </script>
 <p> </p>
 <p> </p>
-<div class="introduction_list" id="sendPostLayer_741225252" style="top:0;left:-999px;position:absolute">
-<ul id="sendPostLayerDiv_741225252">
+<div class="introduction_list" id="sendPostLayer_741272498" style="top:0;left:-999px;position:absolute">
+<ul id="sendPostLayerDiv_741272498">
 </ul>
-<a class="layer_close" href="#" onclick="Element.hide('sendPostLayer_741225252');return false;"><img alt="레이어 닫기" height="12" src="https://cafe.pstatic.net/editor/btn_layer_close2.gif" width="13"/></a>
+<a class="layer_close" href="#" onclick="Element.hide('sendPostLayer_741272498');return false;"><img alt="레이어 닫기" height="12" src="https://cafe.pstatic.net/editor/btn_layer_close2.gif" width="13"/></a>
 </div>
 </div>
 </div>
 <form action="/ArticleWrite.nhn" method="get" name="frmModify" style="display:none">
 <input name="boardtype" type="hidden" value="L"/>
-<input name="articleid" type="hidden" value="741225252"/>
+<input name="articleid" type="hidden" value="741272498"/>
 <input name="clubid" type="hidden" value="10050146"/>
 <input name="referrerAllArticles" type="hidden" value="true"/>
 <input name="page" type="hidden" value="1"/>
@@ -1371,7 +1352,7 @@ var oGroupSSPAdvertReporter = new cafe.GroupSSP.Advert.Reporter();
 </form>
 <form action="/ArticleDelete.nhn" method="post" name="frmDelete" style="display:none">
 <input name="boardtype" type="hidden" value="L"/>
-<input name="articleid" type="hidden" value="741225252"/>
+<input name="articleid" type="hidden" value="741272498"/>
 <input name="clubid" type="hidden" value="10050146"/>
 <input name="referrerAllArticles" type="hidden" value="true"/>
 <input name="page" type="hidden" value="1"/>
@@ -1385,7 +1366,7 @@ var oGroupSSPAdvertReporter = new cafe.GroupSSP.Advert.Reporter();
 <div id="divSavedScrapReplyYn" style="display:none"></div>
 <form action="/ArticlePrint.nhn" method="post" name="frmPrint" style="display:none">
 <input name="clubid" type="hidden" value="10050146"/>
-<input name="articleid" type="hidden" value="741225252"/>
+<input name="articleid" type="hidden" value="741272498"/>
 </form>
 <div id="emoticon" style="display: none; width:342px; position:absolute; left:100px ; top: 0px; overflow:hidden">
 <table border="0" cellpadding="1" cellspacing="1" role="presentation" style="background-color:#C7C7C9;" width="342">
@@ -1418,7 +1399,7 @@ var oGroupSSPAdvertReporter = new cafe.GroupSSP.Advert.Reporter();
 <form action="" method="POST" name="cafeCmtSubmit" target="">
 <input name="content" type="hidden" value="">
 <input name="clubid" type="hidden" value="10050146">
-<input name="menuid" type="hidden" value="1662">
+<input name="menuid" type="hidden" value="1866">
 <input name="articleid" type="hidden" value="">
 <input name="m" type="hidden" value="write">
 <input name="commentid" type="hidden" value="">
@@ -1429,7 +1410,7 @@ var oGroupSSPAdvertReporter = new cafe.GroupSSP.Advert.Reporter();
 <input name="replyToNick" type="hidden" value="">
 <input name="csKey" type="hidden" value="">
 <input name="csValue" type="hidden" value="">
-<input name="branchCode" type="hidden" value="xG9itVHUU/zuKQs3Kwksm9B2JtuxXTu20U9bBIxbheg=">
+<input name="branchCode" type="hidden" value="r1v/LkS3Az1AxVqxWY5of4dZyz8qRu3SPyZzFU6vPtQ=">
 <input name="stickerId" type="hidden" value="">
 <input name="imagePath" type="hidden" value="">
 <input name="imageFileName" type="hidden" value="">
@@ -1739,7 +1720,7 @@ var oGroupSSPAdvertReporter = new cafe.GroupSSP.Advert.Reporter();
 <a href="#" onclick="Element.hide('buyEscrowGuideLayer'); return false;"><img src="https://cafe.pstatic.net/editor/btn_confirm2.gif"/></a>
 </div>
 </div>
-<div class="comm_layer" id="confirm_writenew_741225252" style="display:none; width:326px; ">
+<div class="comm_layer" id="confirm_writenew_741272498" style="display:none; width:326px; ">
 <p class="dc_1">
 		이 게시글을 현재 게시판의 새 글로 다시 등록하시겠습니까? <br/>
 		현재글은 ‘판매완료’ 상태로 자동변경됩니다.<br/>
@@ -1749,12 +1730,12 @@ var oGroupSSPAdvertReporter = new cafe.GroupSSP.Advert.Reporter();
 <strong>수락 하시겠습니까?</strong>
 </p>
 <div class="btn_box">
-<a href="#" onclick="doSubmitForSaleArticle_741225252('writenew'); clickcr(this,'gdb.newok','','',event); return false;"><img alt="확인" src="https://cafe.pstatic.net/cafe4/btn_confirm9.gif"/></a>
-<a href="#" onclick="Element.hide('confirm_writenew_741225252'); return false;"><img alt="취소" height="28" src="https://cafe.pstatic.net/cafe4/btn_cancel2.gif" width="48"/></a>
+<a href="#" onclick="doSubmitForSaleArticle_741272498('writenew'); clickcr(this,'gdb.newok','','',event); return false;"><img alt="확인" src="https://cafe.pstatic.net/cafe4/btn_confirm9.gif"/></a>
+<a href="#" onclick="Element.hide('confirm_writenew_741272498'); return false;"><img alt="취소" height="28" src="https://cafe.pstatic.net/cafe4/btn_cancel2.gif" width="48"/></a>
 </div>
-<a class="closelayer" href="#" onclick="Element.hide('confirm_writenew_741225252'); return false;"><img alt="닫기" height="19" src="https://cafe.pstatic.net/cafe4/btn_close4.gif" width="19"/></a>
+<a class="closelayer" href="#" onclick="Element.hide('confirm_writenew_741272498'); return false;"><img alt="닫기" height="19" src="https://cafe.pstatic.net/cafe4/btn_close4.gif" width="19"/></a>
 </div>
-<div class="comm_layer" id="confirm_soldout_741225252" style="display:none; width:214px; ">
+<div class="comm_layer" id="confirm_soldout_741272498" style="display:none; width:214px; ">
 <p class="dc_1">
 		판매완료로 변경하시겠습니까?<br/>
 		다시 판매중으로 되돌릴 수 없습니다.
@@ -1763,10 +1744,10 @@ var oGroupSSPAdvertReporter = new cafe.GroupSSP.Advert.Reporter();
 <strong>수락 하시겠습니까?</strong>
 </p>
 <div class="btn_box">
-<a href="#" onclick="doSubmitForSaleArticle_741225252('soldout'); clickcr(this,'gdb.soldoutok','','',event); return false;"><img alt="확인" src="https://cafe.pstatic.net/cafe4/btn_confirm9.gif"/></a>
-<a href="#" onclick="Element.hide('confirm_soldout_741225252'); return false;"><img alt="취소" height="28" src="https://cafe.pstatic.net/cafe4/btn_cancel2.gif" width="48"/></a>
+<a href="#" onclick="doSubmitForSaleArticle_741272498('soldout'); clickcr(this,'gdb.soldoutok','','',event); return false;"><img alt="확인" src="https://cafe.pstatic.net/cafe4/btn_confirm9.gif"/></a>
+<a href="#" onclick="Element.hide('confirm_soldout_741272498'); return false;"><img alt="취소" height="28" src="https://cafe.pstatic.net/cafe4/btn_cancel2.gif" width="48"/></a>
 </div>
-<a class="closelayer" href="#" onclick="Element.hide('confirm_soldout_741225252'); return false;"><img alt="닫기" height="19" src="https://cafe.pstatic.net/cafe4/btn_close4.gif" width="19"/></a>
+<a class="closelayer" href="#" onclick="Element.hide('confirm_soldout_741272498'); return false;"><img alt="닫기" height="19" src="https://cafe.pstatic.net/cafe4/btn_close4.gif" width="19"/></a>
 </div>
 <div class="cafe_calendar_layer" id="delcalendar" style="display:none; width:279px; z-index: 2000; position: absolute;">
 <h3>카페 캘린더에서 제외</h3>
@@ -1808,7 +1789,7 @@ var oGroupSSPAdvertReporter = new cafe.GroupSSP.Advert.Reporter();
 <input id="deliveryType" name="deliveryType" type="hidden" value="web"/>
 <input id="regYn" name="regYn" type="hidden"/>
 <input id="clubid" name="clubid" type="hidden" value="10050146"/>
-<input id="articleid" name="articleid" type="hidden" value="741225252"/>
+<input id="articleid" name="articleid" type="hidden" value="741272498"/>
 </form>
 <form action="" name="photoViewerFrm">
 <input name="photoviewerJsonStr" type="hidden" value=""/>
@@ -1828,7 +1809,7 @@ try{
 etc["sti"] = "cafe_article_market";
 
 
-lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
+lcs_do_gdid('90000004_00995A622C2EEBB200000000',etc);
 }catch(e) {}
 
 
@@ -1849,7 +1830,7 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
 <script charset="utf-8" src="/static/js/mycafe/javascript/lib/xregexp/xregexp-all-1577769455000-128819.js" type="text/javascript"></script>
 <script charset="UTF-8" src="/static/js/mycafe/board/article/include/ScriptArticleReadUpArticle-1578547956000-5052.js" type="text/javascript"></script>
 <script charset="UTF-8" src="/static/js/mycafe/board/article/include/ScriptArticleReadCommentPack-1578547956000-125456.js" type="text/javascript"></script>
-<script charset="utf-8" src="/static/js/mycafe/javascript/lib/cafe/jindo1/cafe.ImageLauncher-1578547956000-16092.js" type="text/javascript"></script>
+<script charset="utf-8" src="/static/js/mycafe/javascript/lib/cafe/jindo1/cafe.ImageLauncher-1587101199000-16092.js" type="text/javascript"></script>
 <script type="text/javascript">
 	document.domain = "naver.com";
     var hasTradeType = (true)?"FLEA_MARKET" : "NONE";
@@ -1888,7 +1869,7 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
                     method: "POST",
                     params: {
                         'cafeId': 10050146,
-                        'articleId': 741225252
+                        'articleId': 741272498
                     },
                     onLoad: function (oRes) {
                         var oResult = JSON.parse(oRes.responseText);
@@ -1926,11 +1907,11 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
     LH.add("registerButtonEvent()");
 
 	if (parent.oMenuMoveUpdater) {
-		parent.oMenuMoveUpdater.update(1662);
+		parent.oMenuMoveUpdater.update(1866);
 	}
 
     
-	var menuid = '1662';
+	var menuid = '1866';
 	var clubid = '10050146';
 	var memberInfo = 'me';
 	var memberInfoForComment = 'me';
@@ -2168,8 +2149,8 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
         }
     });
 
-    var kept = new cafeSendPostKept('[]', "741225252");
-    cafeSendPost.setKeptInstance("741225252", kept);
+    var kept = new cafeSendPostKept('[]', "741272498");
+    cafeSendPost.setKeptInstance("741272498", kept);
 
     function blockEmbedObjectAd() {
         var items = document.getElementsByTagName("EMBED");
@@ -2192,7 +2173,7 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
         	return;
     	}
 
-        var reqURL = "/ArticleRead.nhn?clubid=10050146&articleid=" + '741225253'+ '&referrerAllArticles=true&boardtype=L';
+        var reqURL = "/ArticleRead.nhn?clubid=10050146&articleid=" + '741272499'+ '&referrerAllArticles=true&boardtype=L';
         reqURL = addOptionalParams(reqURL);
         //if book
         
@@ -2206,7 +2187,7 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
     
     function addOptionalParams(requestUrl) {
     	if(false) {
-    		requestUrl = requestUrl + "&menuid=" + 1662;
+    		requestUrl = requestUrl + "&menuid=" + 1866;
         }
         if(false){
         	requestUrl = requestUrl + "&marketBoardTab=" + 'D';
@@ -2219,7 +2200,7 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
         	alert('다음 글은 접근 제한중인 게시판의 게시글입니다.');
         	return;
     	}
-        var reqURL = "/ArticleRead.nhn?clubid=10050146&articleid=" + '741225251' + '&referrerAllArticles=true&boardtype=L';
+        var reqURL = "/ArticleRead.nhn?clubid=10050146&articleid=" + '741272496' + '&referrerAllArticles=true&boardtype=L';
         reqURL = addOptionalParams(reqURL);
 
         //if book
@@ -2265,7 +2246,7 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
      
          
          
-         document.location.href = "https://cafe.naver.com/ArticleWrite.nhn?clubid=10050146&menuid=&boardtype=L&page=1&userDisplay=&menuidForWrite=1662&m=write";
+         document.location.href = "https://cafe.naver.com/ArticleWrite.nhn?clubid=10050146&menuid=&boardtype=L&page=1&userDisplay=&menuidForWrite=1866&m=write";
          
      
      }
@@ -2274,7 +2255,7 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
      
          
          
-         document.location.href = "https://cafe.naver.com/ArticleWrite.nhn?clubid=10050146&menuid=&boardtype=L&page=1&userDisplay=&articleid=741225252&m=reply";
+         document.location.href = "https://cafe.naver.com/ArticleWrite.nhn?clubid=10050146&menuid=&boardtype=L&page=1&userDisplay=&articleid=741272498&m=reply";
          
      
      }
@@ -2293,11 +2274,11 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
       
     
     function scrapThis(num) {
-        document.getElementById("frameArticleScrap").src = "/CafeScrapContent.nhn?clubid=10050146&articleid=741225252&type=blog";
+        document.getElementById("frameArticleScrap").src = "/CafeScrapContent.nhn?clubid=10050146&articleid=741272498&type=blog";
     }
 
     function scrap_cafe(num) {
-        document.getElementById("frameArticleScrap").src = "/CafeScrapContent.nhn?clubid=10050146&articleid=741225252&type=cafe";
+        document.getElementById("frameArticleScrap").src = "/CafeScrapContent.nhn?clubid=10050146&articleid=741272498&type=cafe";
     }
 
     function scrapBlog() {
@@ -2330,11 +2311,11 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
 
     function boardPrint(num) {
         var oForm = document.frmPrint;
-        window.open("https://cafe.naver.com/ArticlePrint.nhn?clubid=10050146&articleid=741225252",oForm.target, "width=662,height=600,scrollbars=yes,resizable=yes");
+        window.open("https://cafe.naver.com/ArticlePrint.nhn?clubid=10050146&articleid=741272498",oForm.target, "width=662,height=600,scrollbars=yes,resizable=yes");
     }
 
     function badArticleReport(num) {
-   		open_window('/BoardReportView.nhn?m=article&clubid=10050146&articleid=741225252', "badReport", 450, 280, "toolbar=0,menubar=0,resizable=no,scrollbars=no");
+   		open_window('/BoardReportView.nhn?m=article&clubid=10050146&articleid=741272498', "badReport", 450, 280, "toolbar=0,menubar=0,resizable=no,scrollbars=no");
     }
     
 
@@ -2408,7 +2389,7 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
                     parent.closeLoginLayer();
 
                     if(checkMode == 'delete'){
-                       deleteArticle("event", 741225252);
+                       deleteArticle("event", 741272498);
                     } else if (checkMode == 'badReport') {
                        badArticleReport();
                     } else if(checkMode =='activityStopPopup') {
@@ -2430,7 +2411,7 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
     }
  	// 로그인 팝업 호출 스크립트
     function openLoginPopup() {
-		open_wnd("https://nid.naver.com/nidlogin.login?template=plogin&mode=form&url=https://cafe.naver.com/OpenerRedirect.nhn%3Fopenerurl%3D%252Fjoonggonara%252F741225252", "naver_login", 410, 280);
+		open_wnd("https://nid.naver.com/nidlogin.login?template=plogin&mode=form&url=https://cafe.naver.com/OpenerRedirect.nhn%3Fopenerurl%3D%252Fjoonggonara%252F741272498", "naver_login", 410, 280);
     }
 
     
@@ -2462,8 +2443,8 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
     }
 
 	
-	function doSubmitForSaleArticle_741225252(sBehavior){
-		var frm = document.frmSaleArticle_741225252;
+	function doSubmitForSaleArticle_741272498(sBehavior){
+		var frm = document.frmSaleArticle_741272498;
 		if( sBehavior == 'writenew'){
 			frm.action = "ArticleClone.nhn";
 		}else if( sBehavior == "soldout"){
@@ -2481,7 +2462,7 @@ lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
     	oTagValidator = new cafe.TagValidator();
         oTagProcessor = new cafe.articleRead.TagProcessor({
         	sClubId : "10050146",
-        	sArticleId : "741225252",
+        	sArticleId : "741272498",
         	bTagReadOnly : 1,
             bActivityStopMember : false,
             bHasTag : false,
@@ -2568,7 +2549,7 @@ if (false) {
 var CafeCommentOptions = {
 		'menuid' : menuid,
 		'clubid' : clubid,
-		'articleid' : '741225252',
+		'articleid' : '741272498',
 		'memberInfo' : memberInfo,
 		'memberInfoForComment' : memberInfoForComment,
 		'naverid' : naverid,
@@ -2584,7 +2565,7 @@ var CafeCommentOptions = {
 		'readOnlyStatus' : 'false',
 	    'loginCheckUrl' : '/LoginCheck.nhn?m=check',
 	 	'loginCheckOk' : 'https://cafe.naver.com/LoginCheck.nhn?m=login',
-		'targetId' : 'gQ0mW',
+		'targetId' : '5H9P3',
 		'iframeId' : 'hiddenIF',
 		'form' : document.cafeCmtSubmit,
 		'cmtMenuId' : 'cmtMenu',
@@ -2642,7 +2623,7 @@ function writeCmtLcs(){
 	try{
 		var etc = {};
 		etc["sti"] = "cafe_comment";
-		lcs_do_gdid('90000004_00995A622C2E332400000000',etc);
+		lcs_do_gdid('90000004_00995A622C2EEBB200000000',etc);
 	}catch(e) {}
 }
 
@@ -2667,7 +2648,7 @@ function initImageLauncher(){
 	}
 }
 LH.add("initImageLauncher()");
-LH.add("skipToMobileweb('https://m.cafe.naver.com/joonggonara/741225252')");
+LH.add("skipToMobileweb('https://m.cafe.naver.com/joonggonara/741272498')");
 var bTablet = false;
 var oTabletHandler = new TabletHandler(bTablet);
 
@@ -2675,7 +2656,7 @@ var oTabletHandler = new TabletHandler(bTablet);
 <script src="/static/js/mycafe/common/storyphoto/extPhotoViewer-1577769455000-1446.js" type="text/javascript"></script>
 <script type="text/javascript">
 var oUpArticleMember = new cafe.LikeItMember({
-	bEnable : true,
+	bEnable : false,
 	elUpArticleMemberBtn : $('likeItMemberBtn'),
 	elLikeItArea : $('likeItMemberArea'),
 	elMemberList : $('likeItMemberList'),
@@ -2683,7 +2664,7 @@ var oUpArticleMember = new cafe.LikeItMember({
 	listURL : '/LikeItMemberViewAjax.nhn?search.clubid={clubid}&search.articleid={articleid}&search.perPage=10&search.page={page}',
 	oCafeCommentMenu : oCmt? oCmt.getCommentMenu() : null,
 	clubId : 10050146,
-	articleId : 741225252,
+	articleId : 741272498,
 	menuid : menuid,
 	memberInfo : memberInfo,
 	entireBoardStaff : entireBoardStaff,
@@ -2762,7 +2743,7 @@ var oMusicPlayer = new MusicPlayer({
 
             
 
-            var optionalJson = {"user_type":"110","uri":"http://cafe.naver.com/joonggonara/741225252","dimension_1":"1662"};
+            var optionalJson = {"user_type":"110","uri":"http://cafe.naver.com/joonggonara/741272498","dimension_1":"1866"};
             optionalJson.referrer = getCurrentReferrer();
 
             nil.add(optionalJson);
@@ -2846,8 +2827,8 @@ var oMusicPlayer = new MusicPlayer({
             eventType: cafe.BAStatEventType.ARTICLE_READ,
             extra: {
                 cafe_id: '10050146',
-                menu_id: '1662',
-                article_id: '741225252',
+                menu_id: '1866',
+                article_id: '741272498',
                 article_type: 'MARKET',
                 referrer: sReferrerForBA,
                 tracking_code : bPossibleToSendBA ? trackingCode : "",
@@ -2989,7 +2970,7 @@ function saveNDrive(path, filename, filesize) {
         mail : {
             
             srvid: 'social',
-            srvurl: 'http://bookmark.naver.com/getRichMailTmpl.ajax?sourceUrl=' + encodeURIComponent('https://cafe.naver.com/MailContent.nhn?clubid=10050146&articleid=741225252')
+            srvurl: 'http://bookmark.naver.com/getRichMailTmpl.ajax?sourceUrl=' + encodeURIComponent('https://cafe.naver.com/MailContent.nhn?clubid=10050146&articleid=741272498')
         },
         memo : {  },
         calendar : {  },

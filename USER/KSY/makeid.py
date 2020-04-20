@@ -32,4 +32,4 @@ while len(article_id_list) < 20000:
             except:
                 pass
 
-np.save("./article_id_list", article_id_list)
+np.save("./article_id_list", list(article_id_list))
