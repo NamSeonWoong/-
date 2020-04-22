@@ -1,7 +1,7 @@
 import React from 'react';
 import {InputGroup, Button, FormControl, Container, Row} from 'react-bootstrap'
 
-const Home = () => {
+const Search = () => {
     const inputstyle = {
         display: "flex",
         justifyContent: "center",
@@ -25,4 +25,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Search;
