@@ -8,7 +8,7 @@ import { Button } from 'react-bootstrap'
 
 function App() {
   return (
-    <div style={{}}>
+    <div style={{height: "100%"}}>
       <body style={{minHeihgt: "100%", margin: "0 0 -200px 0"}}>
         <div style= {{margin: "2% 2% 5% 2%", display: "flex", justifyContent: "flex-end"}}>
           <Link to="/">
@@ -23,9 +23,9 @@ function App() {
         <Route path="/about" component={About} exact={true}/>
         <Route path="/search" component={Search} exact={true}/>
       </body>
-      {/* <footer
+      <footer
         style={{
-          position: "absolute",
+          marginTop: "65%",
           bottom: "0",
           width: "100%",
           height: "200px",
@@ -46,7 +46,7 @@ function App() {
             대표연락처 : vxda7@naver.com
             <br />
           </div>
-      </footer> */}
+      </footer>
     </div>
   );
 }

@@ -35,9 +35,10 @@ import axios from 'axios';
 
 const Home = ({history}) => {
     const [realdata, setRealdata] = React.useState([]);
+    const [nextdata, setNextdata] = React.useState([]); // 미리 다음페이지 로딩
     const [data, setData] = React.useState("");
     const [inputdata, setInputdata] = React.useState("")
-    let page = 1;
+    const [page, setPage] = React.useState(1)
     const handleChange = (e) => {
         setInputdata(e.target.value)
     }
@@ -57,6 +58,17 @@ const Home = ({history}) => {
         ).catch((e)=>{
             console.log(e)
         })
+        // 다음페이지 미리 로딩
+        axios.get(`http://i02c102.p.ssafy.io:5000/search/${inputdata}/${page + 1}`)
+        .then(
+            (res)=>{
+                setPage(page + 1)
+                console.log(res.data)
+                setNextdata(res.data)
+            }
+        ).catch(
+            (e)=>{console.log(e)}
+        )
     }
     const handleKeyPress = (e) => {
         if (e.key === "Enter"){
@@ -65,11 +77,13 @@ const Home = ({history}) => {
     }
 
     const Morepage = () => {
+        setRealdata(realdata.concat(nextdata))
+        setNextdata([])
         axios.get(`http://i02c102.p.ssafy.io:5000/search/${inputdata}/${page + 1}`)
             .then((res)=>{
                 console.log(res.data)
-                setRealdata(realdata.concat(res.data))
-                page += 1;
+                setNextdata(res.data)
+                setPage(page + 1)
             })
             .catch((e)=>{
                 console.log(e)
