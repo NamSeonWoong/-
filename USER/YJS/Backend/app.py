@@ -5,11 +5,14 @@ from crawling import search
 from DeepLearning import processing
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from flask_cors import CORS
+
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db' # /// 세개는 상대적 path, //// 네개는 절대 path
 db = SQLAlchemy(app)
+CORS(app)
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -23,6 +26,11 @@ class Post(db.Model):
 
     def __repr__(self):
         return f'<Post {self.id}>'
+
+@app.route('/', methods=['GET'])
+def test():
+    return "It worked properly"
+
 
 @app.route('/search/<string:keyword>/<int:page>', methods=['GET'])
 def process(keyword, page):
@@ -48,5 +56,5 @@ def process(keyword, page):
     return "OMG, Something Wrong"
 
 if __name__ == "__main__":
-    app.run(debug=False, host="0.0.0.0",port="5000")
+    app.run(debug=False, host="127.0.0.1", port=5000)
     # app.run(debug=False)
