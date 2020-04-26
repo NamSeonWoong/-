@@ -31,4 +31,4 @@ for line in json_data:
     dataset['price'].append(price_data)
 
 df = pd.DataFrame(dataset)
-print(df)
+df.to_csv('data.csv', mode='w', index=False)
