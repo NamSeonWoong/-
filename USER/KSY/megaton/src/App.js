@@ -5,6 +5,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Search from "./pages/Search"
 import { Button } from 'react-bootstrap'
+import arrow from "../src/images/arrow.png"
 
 function App() {
   return (
@@ -47,6 +48,9 @@ function App() {
             <br />
           </div>
       </footer>
+      <div style={{position: "fixed", bottom: "100px", right: "30px"}}>
+        <a href="#"><img src={arrow} style={{height: "30px"}}/></a>
+      </div>
     </div>
   );
 }

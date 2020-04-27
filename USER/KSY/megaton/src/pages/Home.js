@@ -134,7 +134,7 @@ const Home = ({history}) => {
                     )}
                 </Row>
             </Container>
-            <h1>{inputdata}</h1>
+            {/* <h1>{inputdata}</h1> */}
         </div>
     )
 }
