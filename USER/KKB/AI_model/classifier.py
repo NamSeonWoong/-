@@ -87,17 +87,17 @@ y_test = np.array(y_data[n_of_train:])
 X_train = data[:n_of_train]
 y_train = np.array(y_data[:n_of_train])
 
-checkpoint_path = "./checkpoints/train"
-ckpt = tf.train.Checkpoint(encoder=encoder,
-                           decoder=decoder,
-                           optimizer = optimizer)
-ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=5)
+# checkpoint_path = "./checkpoints/train"
+# ckpt = tf.train.Checkpoint(encoder=encoder,
+#                            decoder=decoder,
+#                            optimizer = optimizer)
+# ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=5)
 
-start_epoch = 0
-if ckpt_manager.latest_checkpoint:
-  start_epoch = int(ckpt_manager.latest_checkpoint.split('-')[-1])
-  # restoring the latest checkpoint in checkpoint_path
-  ckpt.restore(ckpt_manager.latest_checkpoint)
+# start_epoch = 0
+# if ckpt_manager.latest_checkpoint:
+#   start_epoch = int(ckpt_manager.latest_checkpoint.split('-')[-1])
+#   # restoring the latest checkpoint in checkpoint_path
+#   ckpt.restore(ckpt_manager.latest_checkpoint)
 
 
 # 모델 생성
@@ -110,3 +110,5 @@ model.compile(optimizer='rmsprop', loss='binary_crossentropy', metrics=['acc'])
 history = model.fit(X_train, y_train, epochs=5, batch_size=64, validation_split=0.2)
 
 print("\n 테스트 정확도: %.4f" % (model.evaluate(X_test, y_test)[1]))
+
+model.save('my_model.h5')
