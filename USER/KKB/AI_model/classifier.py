@@ -107,8 +107,17 @@ model.add(SimpleRNN(32)) # RNN 셀의 hidden_size는 32
 model.add(Dense(1, activation='sigmoid'))
 
 model.compile(optimizer='rmsprop', loss='binary_crossentropy', metrics=['acc'])
-history = model.fit(X_train, y_train, epochs=5, batch_size=64, validation_split=0.2)
+history = model.fit(X_train, y_train, epochs=3, batch_size=64, validation_split=0.2)
 
 print("\n 테스트 정확도: %.4f" % (model.evaluate(X_test, y_test)[1]))
 
 model.save('my_model.h5')
+
+epochs = range(1, len(history.history['acc']) + 1)
+plt.plot(epochs, history.history['loss'])
+plt.plot(epochs, history.history['val_loss'])
+plt.title('model loss')
+plt.ylabel('loss')
+plt.xlabel('epoch')
+plt.legend(['train', 'val'], loc='upper left')
+plt.show()
