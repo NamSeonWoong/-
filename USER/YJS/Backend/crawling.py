@@ -14,7 +14,6 @@ def search(keyword, page):
     def get_article_data():
         newKeyword = str(keyword.encode('ms949')).lstrip("b'").rstrip("'").replace("\\x","%")
         url = base_url + f"/ArticleSearchList.nhn?search.clubid=10050146&search.searchdate=all&search.page={page}&search.searchBy=0&search.query={newKeyword}&search.includeAll=&search.exclude=&search.include=&search.exact=&"
-        print(newKeyword)
         html = requests.get(url, headers = headers)
         soup = BeautifulSoup(html.text, 'html.parser')
         soup = soup.select('#main-area > div.article-board > table > tbody> tr')
@@ -23,9 +22,12 @@ def search(keyword, page):
         return soup
 
     def get_text_data(url):
-        html = requests.get(base_url+url, headers = headers)
-        soup = BeautifulSoup(html.text, 'html.parser')
-        data = soup.select_one('html>body>#basisElement>#content-area>#main-area>div.list-blog>div.inbox')
+        try:
+            html = requests.get(base_url+url, headers = headers)
+            soup = BeautifulSoup(html.text, 'html.parser')
+            data = soup.select_one('html>body>#basisElement>#content-area>#main-area>div.list-blog>div.inbox')
+        except:
+            print("data error")
         if not data:
             data = soup
         try:
@@ -67,6 +69,6 @@ def search(keyword, page):
     if not len(data):
         return process_datas
     for tr in data:
-        process_datas.append(get_text_data(tr.select_one('a.article')['href']))
+        process_datas.append(get_text_data(tr.select_one('a.article')['href']))    
 
     return process_datas

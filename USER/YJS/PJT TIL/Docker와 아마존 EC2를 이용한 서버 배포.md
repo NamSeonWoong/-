@@ -191,3 +191,40 @@
     - doccano 회원 관리
 
 12. ec2 인스턴스 종료후 자동화 배포 해보기
+
+13. frontend server 배포
+
+    - 대체로 flask 배포 때와 비슷하다.
+    - 우리 frontend 서버는 create-react-app을 통해 만들었으므로 미리 정의된 Dockerfile을 활용했다.
+
+> .dockerignore
+
+```
+node_modules
+npm-debug.log
+```
+
+>Dockerfile
+
+```dockerfile
+FROM mhart/alpine-node:11 AS builder
+WORKDIR /app
+COPY . .
+RUN npm install react-scripts -g --silent
+RUN yarn install
+RUN yarn run build
+
+FROM mhart/alpine-node
+RUN yarn global add serve
+WORKDIR /app
+COPY --from=builder /app/build .
+CMD ["serve", "-p", "22", "-s", "."]doc
+
+```
+
+- 서버 포트부분은 조금 바꿔주었다.
+- 이후 이미지 생성 후 컨테이너를 배포하여 배포성공하였다.
+
+먼저 기본 주소창 입력으로 포트번호 미입력하고 들어가면 80포트로 자동으로 들어가진다. 하지만 우리 80포트는 annotation tool이 차지하고 있으므로 기본 포트번호를 바꿔주거나 해당 툴을 꺼야한다.
+
+현재 annotation tool은 더이상 이용하지 않고 있으며, 무엇보다 ssh 설정을 바꿔주는 방법에 생소해 돌이킬 수 없을 까봐 annotation tool을 끄고 하기로 했다.
