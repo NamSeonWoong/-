@@ -3,6 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.layers import SimpleRNN, Embedding, Dense
+from tensorflow.keras.models import Sequential
 
 data = pd.read_csv('../data.csv',encoding='utf-8')
 
@@ -74,8 +76,39 @@ max_len = 16899
 data = pad_sequences(X_data, maxlen = max_len)
 print("훈련 데이터의 크기(shape): ", data.shape)
 
-# 데이터 분류
+# 데이터 분할
+n_of_train = int(len(sequences) * 0.8)
+n_of_test = int(len(sequences) - n_of_train)
+# print('훈련 데이터의 개수 :',n_of_train)
+# print('테스트 데이터의 개수:',n_of_test)
+
 X_test = data[n_of_train:] 
 y_test = np.array(y_data[n_of_train:]) 
 X_train = data[:n_of_train]
 y_train = np.array(y_data[:n_of_train])
+
+# checkpoint_path = "./checkpoints/train"
+# ckpt = tf.train.Checkpoint(encoder=encoder,
+#                            decoder=decoder,
+#                            optimizer = optimizer)
+# ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=5)
+
+# start_epoch = 0
+# if ckpt_manager.latest_checkpoint:
+#   start_epoch = int(ckpt_manager.latest_checkpoint.split('-')[-1])
+#   # restoring the latest checkpoint in checkpoint_path
+#   ckpt.restore(ckpt_manager.latest_checkpoint)
+
+
+# 모델 생성
+model = Sequential()
+model.add(Embedding(vocab_size, 32)) # 임베딩 벡터의 차원은 32
+model.add(SimpleRNN(32)) # RNN 셀의 hidden_size는 32
+model.add(Dense(1, activation='sigmoid'))
+
+model.compile(optimizer='rmsprop', loss='binary_crossentropy', metrics=['acc'])
+history = model.fit(X_train, y_train, epochs=5, batch_size=64, validation_split=0.2)
+
+print("\n 테스트 정확도: %.4f" % (model.evaluate(X_test, y_test)[1]))
+
+model.save('my_model.h5')
