@@ -2,7 +2,7 @@ import React from 'react'
 import {Table} from 'react-bootstrap'
 
 
-const Board = ({data, setData, realdata}) => {
+const Board = ({realdata}) => {
     return (
         <>
             <Table responsive>
@@ -15,14 +15,15 @@ const Board = ({data, setData, realdata}) => {
                 </tr>
                 </thead>
                 <tbody>
-                    {realdata.map(data => (
-                        <tr>
-                            <td className="text-center">{data.category}</td>
-                            <td><a href={data.url}>{data.title}</a></td>    
-                            <td className="text-center">{data.user}</td>
-                            <td className="text-center">{data.date}</td>
-                        </tr>
-                    ))}
+                    
+                        {realdata.map(data => (
+                            <tr>
+                                <td className="text-center">{data.category}</td>
+                                <td><a href={data.url}>{data.title}</a></td>    
+                                <td className="text-center">{data.user}</td>
+                                <td className="text-center">{data.date}</td>
+                            </tr>
+                        ))}
                     
                 </tbody>
             </Table>
