@@ -8,28 +8,29 @@ import { Button } from 'react-bootstrap'
 
 function App() {
   return (
-    <div>
-      <div style= {{margin: "2% 2% 5% 2%", display: "flex", justifyContent: "flex-end"}}>
-        <Link to="/">
-          <Button>홈</Button>
-        </Link>
-      
-        <Link to={"/about"}>
-          <Button>소개</Button>
-        </Link>
-      </div>
-    
-      <Route path="/" component={Home} exact={true}/>
-      <Route path="/about" component={About} exact={true}/>
-      <Route path="/search" component={Search} exact={true}/>
-
-
-
+    <div style={{height: "100%"}}>
+      <body style={{minHeihgt: "100%", margin: "0 0 -200px 0"}}>
+        <div style= {{margin: "2% 2% 5% 2%", display: "flex", justifyContent: "flex-end"}}>
+          <Link to="/">
+            <Button variant="outline-primary">홈</Button>
+          </Link>
+        
+          <Link to={"/about"}>
+            <Button variant="outline-primary">소개</Button>
+          </Link>
+        </div>
+        <Route path="/" component={Home} exact={true}/>
+        <Route path="/about" component={About} exact={true}/>
+        <Route path="/search" component={Search} exact={true}/>
+      </body>
       <footer
         style={{
+          marginTop: "65%",
+          bottom: "0",
+          width: "100%",
+          height: "200px",
           backgroundColor: "#eceff1",
           color: "#757575",
-          marginTop: "2%",
           paddingLeft: "10%",
           paddingRight: "10%",
           paddingTop: "2%",
@@ -37,12 +38,6 @@ function App() {
         }}
       >
         <hr style={{ marginBottom: "2%" }} />
-        {/* <div
-          container
-          direction="row"
-          justify="space-between"
-          alignItems="center"
-        > */}
           <div>
             copyright® Cat Ltd. All rights Reserved.
             <br />
@@ -51,17 +46,9 @@ function App() {
             대표연락처 : vxda7@naver.com
             <br />
           </div>
-          <div>
-            {/* <img src={javalogo} alt="javalogo" style={{ height: "50px" }} />
-            <img src={springlogo} alt="springlogo" style={{ height: "50px" }} />
-            <img src={reactlogo} alt="reactlogo" style={{ height: "50px" }} />
-            <img src={dockerlogo} alt="dockerlogo" style={{ height: "50px" }} /> */}
-          </div>
-        {/* </div> */}
       </footer>
     </div>
   );
 }
 
 export default App;
-
