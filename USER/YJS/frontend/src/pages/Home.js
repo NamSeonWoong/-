@@ -39,6 +39,7 @@ const Home = ({history}) => {
     const [data, setData] = React.useState("");
     const [inputdata, setInputdata] = React.useState("")
     const [page, setPage] = React.useState(1)
+    const [loading, setLoading] = React.useState(false)
     const handleChange = (e) => {
         setInputdata(e.target.value)
     }
@@ -47,10 +48,10 @@ const Home = ({history}) => {
         width: "80%"
     }
     const Search = () => {
-        console.log('searching')
+        setLoading(true)
         setData(inputdata);
         // setInputdata("");
-        axios.get(`http://i02c102.p.ssafy.io:5000/search/${inputdata}/${page}`)
+        axios.get(`http://127.0.0.1:5000/search/${inputdata}/${page}`)
         .then(
             (res)=>{
                 console.log(res.data)
@@ -60,12 +61,13 @@ const Home = ({history}) => {
             console.log(e)
         })
         // 다음페이지 미리 로딩
-        axios.get(`http://i02c102.p.ssafy.io:5000/search/${inputdata}/${page + 1}`)
+        axios.get(`http://127.0.0.1:5000/search/${inputdata}/${page + 1}`)
         .then(
             (res)=>{
                 setPage(page + 1)
                 console.log(res.data)
                 setNextdata(res.data)
+                setLoading(false)
             }
         ).catch(
             (e)=>{console.log(e)}
@@ -78,6 +80,7 @@ const Home = ({history}) => {
     }
 
     const Morepage = () => {
+        setLoading(true)
         setRealdata(realdata.concat(nextdata))
         setNextdata([])
         axios.get(`http://i02c102.p.ssafy.io:5000/search/${inputdata}/${page + 1}`)
@@ -85,6 +88,7 @@ const Home = ({history}) => {
                 console.log(res.data)
                 setNextdata(res.data)
                 setPage(page + 1)
+                setLoading(false)
             })
             .catch((e)=>{
                 console.log(e)
@@ -116,16 +120,21 @@ const Home = ({history}) => {
                 <Row className="justify-content-center">
                     {data ? (
                         <>
-                            <Board data={data} setData={setData} realdata={realdata}/>
+                            <Board realdata={realdata}/>
                             {/* {LoadingButton()} */}
-                            <Button onClick={Morepage}>더보기</Button>
+                            {loading ? (
+                                <Button disabled>로딩중...</Button>
+                            ):(
+                                <Button onClick={Morepage}>더보기</Button>
+                            )}
+                            
                         </>
                     ) : (
                         <></>
                     )}
                 </Row>
             </Container>
-            <h1>{inputdata}</h1>
+            {/* <h1>{inputdata}</h1> */}
         </div>
     )
 }
