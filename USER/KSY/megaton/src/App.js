@@ -5,7 +5,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Search from "./pages/Search"
 import { Button } from 'react-bootstrap'
-import arrow from "../src/images/arrow.png"
+import arrow from "../src/images/arrow2.png"
 
 function App() {
   return (
