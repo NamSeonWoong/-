@@ -5,6 +5,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.layers import SimpleRNN, Embedding, Dense
 from tensorflow.keras.models import Sequential
+import pickle
 
 data = pd.read_csv('../data.csv',encoding='utf-8')
 
@@ -38,6 +39,12 @@ sequences = tokenizer.texts_to_sequences(X_data) # 단어를 숫자값, 인덱�
 
 word_to_index = tokenizer.word_index
 # print(word_to_index)
+
+
+# tokenizer 저장
+with open('tokenizer.pickle', 'wb') as handle:
+    pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
 
 threshold = 2
 total_cnt = len(word_to_index) # 단어의 수
@@ -100,24 +107,24 @@ y_train = np.array(y_data[:n_of_train])
 #   ckpt.restore(ckpt_manager.latest_checkpoint)
 
 
-# 모델 생성
-model = Sequential()
-model.add(Embedding(vocab_size, 32)) # 임베딩 벡터의 차원은 32
-model.add(SimpleRNN(32)) # RNN 셀의 hidden_size는 32
-model.add(Dense(1, activation='sigmoid'))
+# # 모델 생성
+# model = Sequential()
+# model.add(Embedding(vocab_size, 32)) # 임베딩 벡터의 차원은 32
+# model.add(SimpleRNN(32)) # RNN 셀의 hidden_size는 32
+# model.add(Dense(1, activation='sigmoid'))
 
-model.compile(optimizer='rmsprop', loss='binary_crossentropy', metrics=['acc'])
-history = model.fit(X_train, y_train, epochs=3, batch_size=64, validation_split=0.2)
+# model.compile(optimizer='rmsprop', loss='binary_crossentropy', metrics=['acc'])
+# history = model.fit(X_train, y_train, epochs=3, batch_size=64, validation_split=0.2)
 
-print("\n 테스트 정확도: %.4f" % (model.evaluate(X_test, y_test)[1]))
+# print("\n 테스트 정확도: %.4f" % (model.evaluate(X_test, y_test)[1]))
 
-model.save('my_model.h5')
+# model.save('my_model.h5')
 
-epochs = range(1, len(history.history['acc']) + 1)
-plt.plot(epochs, history.history['loss'])
-plt.plot(epochs, history.history['val_loss'])
-plt.title('model loss')
-plt.ylabel('loss')
-plt.xlabel('epoch')
-plt.legend(['train', 'val'], loc='upper left')
-plt.show()
+# epochs = range(1, len(history.history['acc']) + 1)
+# plt.plot(epochs, history.history['loss'])
+# plt.plot(epochs, history.history['val_loss'])
+# plt.title('model loss')
+# plt.ylabel('loss')
+# plt.xlabel('epoch')
+# plt.legend(['train', 'val'], loc='upper left')
+# plt.show()
