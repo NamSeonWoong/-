@@ -1,10 +1,9 @@
-import random
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow import keras
+import tensorflow as tf
+import os
 
-
-def processing(original):    
-    for item in original:
-        if (random.uniform(0,1) > 0.5):
-            item['isTrader'] = True
-        else:
-            item['isTrader'] = False
-    return original
+def processing(original, model):    
+    # new_model.predict
+    pass

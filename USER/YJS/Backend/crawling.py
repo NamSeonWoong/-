@@ -31,7 +31,15 @@ def search(keyword, page):
         if not data:
             data = soup
         try:
-            title = data.select_one("div.tit-box>div.fl>table>tr>td>span").text
+            title = data.select_one("div.tit-box")
+            titleps = title.find_all('p')
+            titlespans = title.find_all('span')
+            title = []
+            if (titleps!=[]):
+                title = list(map(lambda x : x.text, titleps))
+            if (titlespans!=[]):
+                title = title + list(map(lambda x : x.text, titlespans))
+            title = ' '.join(title)
         except:
             title="error!"
         try:
@@ -47,12 +55,27 @@ def search(keyword, page):
         except:
             price="error!"
         try :
-            content = data.select_one("#tbody > div.NHN_Writeform_Main")
-            # print(data.select_one("#tbody > div.NHN_Writeform_Main"))
-            content = list(map(lambda x : x.text, content))
-            if "* 거래전 필독! 주의하세요!" in content[0]:
+            content = data.select_one("#tbody")
+            if content.find(class_="comm-foreign"):
+                content.find(class_="comm-foreign").decompose()
+            if content.find(class_="comm-detail"):
+                content.find(class_="comm-detail").decompose()
+            if content.find(class_="notice_manager"):
+                content.find(class_="notice_manager").decompose()
+            ps = content.find_all('p')
+            spans = content.find_all('span')
+            content = []
+            if (ps!=[]):
+                content = list(map(lambda x : x.text, ps))
+            if (spans!=[]):
+                content = content + list(map(lambda x : x.text, spans))
+            
+            if len(content) and "* 거래전 필독! 주의하세요!" in content[0]:
                 content.pop(0)
-        except:
+        except Exception as e:
+            print(f'content error! {str(e)} {title}')
+            # print(ps)
+            # print(spans)
             content = []
         try: 
             date = data.select_one("div.tit-box > div.fr > table > tbody > tr > td.m-tcol-c.date").text

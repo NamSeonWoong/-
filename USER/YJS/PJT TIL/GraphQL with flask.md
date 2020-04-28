@@ -26,7 +26,7 @@ GraphQL은 API를 위한 query language이다. REST API에 비해 여러 장점�
     - 그 후, /user/\<id\>/posts endpoint에서 해당 유저의 모든 게시글들을 가져온다
     - 마지막으로, /user/\<id\>/followers에서 해당 유저의 모든 팔로워들을 가져온다
 
-  - ![img](https://res.cloudinary.com/practicaldev/image/fetch/s--dTu5x1Mo--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://imgur.com/VRyV7Jh.png)
+  - ![img](GraphQL with flask.assets/VRyV7Jh.png)
 
     ​	- 그림 출처 : source :howtographql.com
 
@@ -38,7 +38,7 @@ GraphQL은 API를 위한 query language이다. REST API에 비해 여러 장점�
 
 - GraphQL은 단 하나의 query를 서버에 보낸다. 서버는 JSON 형식의 respond를 돌려준다.
 
-![img](https://res.cloudinary.com/practicaldev/image/fetch/s--Icv1_RJj--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://imgur.com/z9VKnHs.png)
+![img](GraphQL with flask.assets/z9VKnHs.png)
 
 - 그림 출처 : source :howtographql.com
 - GraphQL에서는 클라이언트 서버가 필요한 데이터만 쿼리에 포함할 수 있다. 백엔드 서버의 응답 또한 정확히 쿼리에 정의한 구조를 따른다
