@@ -109,9 +109,9 @@ const Home = ({history, props, setSearchloading}) => {
                         <>
                             <Board realdata={realdata} filterState={filterState}/>
                             {loading ? (
-                                <Button disabled>로딩중...</Button>
+                                <Button disabled style={{marginBottom: "30px"}}>로딩중...</Button>
                             ):(
-                                <Button onClick={Morepage}>더보기</Button>
+                                <Button onClick={Morepage} style={{marginBottom: "30px"}}>더보기</Button>
                             )}
                             
                         </>

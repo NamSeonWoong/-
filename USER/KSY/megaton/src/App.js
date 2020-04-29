@@ -10,10 +10,11 @@ import LoadingOverlay from 'react-loading-overlay'
 
 function App() {
   const [searchloading, setSearchloading] = React.useState(false)
+
   return (
-    <div style={{height: "100%"}}>
-      <LoadingOverlay active={searchloading} spinner text="Loading...">
-        <body style={{minHeihgt: "100%", margin: "0 0 -200px 0"}}>
+    <div style={{height: "100%", display: "flex", flexDirection: "column"}}>
+      <LoadingOverlay active={searchloading} spinner text="Loading..." styles={{wrapper: {height: '100%'}}}>
+        <body style={{minHeight: "84%"}}>
           <div style= {{margin: "2% 2% 5% 2%", display: "flex", justifyContent: "flex-end"}}>
             <Link to="/">
               <Button variant="outline-primary">홈</Button>
@@ -28,10 +29,9 @@ function App() {
         </body>
         <footer
           style={{
-            marginTop: "65%",
-            bottom: "0",
+            marginTop: "auto",
             width: "100%",
-            height: "200px",
+            height: "180px",
             backgroundColor: "#eceff1",
             color: "#757575",
             paddingLeft: "10%",
