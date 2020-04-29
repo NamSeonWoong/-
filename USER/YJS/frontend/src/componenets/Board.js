@@ -2,7 +2,7 @@ import React from 'react'
 import {Table, Button, Modal, Form} from 'react-bootstrap'
 import axios from 'axios'
 
-const Board = ({realdata}) => {
+const Board = ({realdata, filterState}) => {
     const [show, setShow] = React.useState(false);
     const handleClose = () => setShow(false);
     const [reportdata, setReportdata] = React.useState({});
@@ -18,7 +18,7 @@ const Board = ({realdata}) => {
         console.log(optionState)
         data.report = optionState
         console.log(data)
-        axios.post("http://127.0.0.1:5000/report", data)
+        axios.post("http://i02c102.p.ssafy.io:5000/report", data)
         .then((res)=>{
             console.log(res)
         })
@@ -38,6 +38,29 @@ const Board = ({realdata}) => {
         }
         return <Button onClick={()=>handleShow(data)} style={{fontSize:"12px"}} size="sm" variant="primary">일반</Button>
     }
+
+    const eachdata = (data, index, advalue) => {
+        if (filterState === "2"){
+            if (advalue > 0.3){
+                return <></>
+            }
+        }
+        else if (filterState === "3"){
+            if (advalue > 0.5){
+                return <></>
+            }
+        }
+        return  (
+            <tr key={index}>
+                <td className="text-center" style={{fontSize: "12px"}}>{data.category}</td>
+                <td><a href={data.url} target="_blank" style={{color: "black"}}>{data.title}</a></td>    
+                <td className="text-center" style={{fontSize: "10px"}}>{data.user}</td>
+                <td className="text-center" style={{fontSize: "12px"}}>{data.date}</td>
+                <td className="text-center">{adButton(data)}</td>
+            </tr>
+        )
+
+    }
     return (
         <>
             <Table responsive>
@@ -51,15 +74,7 @@ const Board = ({realdata}) => {
                 </tr>
                 </thead>
                 <tbody>
-                    {realdata.map((data, index) => (
-                        <tr key={index}>
-                            <td className="text-center" style={{fontSize: "12px"}}>{data.category}</td>
-                            <td><a href={data.url} target="_blank" style={{color: "black"}}>{data.title}</a></td>    
-                            <td className="text-center" style={{fontSize: "10px"}}>{data.user}</td>
-                            <td className="text-center" style={{fontSize: "12px"}}>{data.date}</td>
-                            <td className="text-center">{adButton(data)}</td>
-                        </tr>
-                    ))}
+                    {realdata.map((data, index) => eachdata(data, index, data.isTrader))}
                 </tbody>
 
                 <Modal show={show} onHide={handleClose} centered>
