@@ -93,7 +93,7 @@ const Home = ({history, props, setSearchloading}) => {
                         <Button variant="outline-secondary" onClick={Search}>검색</Button>
                         </InputGroup.Append>
                     </InputGroup>
-                    <Form>
+                    <Form style={{marginLeft: "20px"}}>
                         <Form.Group controlId="exampleForm.SelectCustom">
                             <Form.Label></Form.Label>
                             <Form.Control as="select" custom value={filterState} onChange={handleFilter}>

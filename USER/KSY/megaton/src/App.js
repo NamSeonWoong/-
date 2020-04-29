@@ -29,7 +29,6 @@ function App() {
         </body>
         <footer
           style={{
-            marginTop: "auto",
             width: "100%",
             height: "180px",
             backgroundColor: "#eceff1",
@@ -40,7 +39,7 @@ function App() {
             paddingBottom: "2%"
           }}
         >
-          <hr style={{ marginBottom: "2%" }} />
+          <hr style={{ marginBottom: "10px" }} />
             <div>
               copyright® Cat Ltd. All rights Reserved.
               <br />
