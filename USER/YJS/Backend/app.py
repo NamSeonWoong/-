@@ -90,10 +90,13 @@ def report():
                 db.session.add(new_transaction)
                 db.session.commit()
                 with open(basedir + '/AI/data.csv', 'a', encoding='utf8') as f:
-                    if (request_data.get('way')=='guilty'):
+                    if (request_data.get('report')=='1'):
                         f.write(f'1,{content},"{request_data.get("price")}"\n')
-                    else:
+                    elif (request_data.get('report')=='2'):
                         f.write(f'0,{content},"{request_data.get("price")}"\n')
+                if (request_data.get('report')=='3'):
+                     with open(basedir + '/needToCheck.csv', 'a', encoding='utf8') as f:
+                        f.write(f'{request_data.get("title")},{request_data.get("user")},{content},"{request_data.get("price")}",{request_data.get("url")}\n')
                 return {
                     "status": 200,
                     "message" : f"transaction {new_transaction.id} {new_transaction.report} has been successfully reported"
@@ -111,33 +114,15 @@ def report():
         return "wrong method"
 
 
-@app.route('/search/<string:keyword>/<int:page>', methods=['GET'])
-def process(keyword, page):
+@app.route('/search/<int:menu>/<string:keyword>/<int:page>', methods=['GET'])
+def process(menu, keyword, page):
     try:
         if request.method == "GET":
             # print("start searching")
-            original = search(keyword, page)
-            # for item in original:
-            #     new_post = Post(
-            #         title=item.get('title'), 
-            #         user=item.get('user'),
-            #         category=item.get('category'), 
-            #         price=item.get('price'), 
-            #         content=item.get('content'), 
-            #         date=item.get('date'), 
-            #         url=item.get('url')
-            #         )
-            #     db.session.add(new_post)
-            # db.session.commit()
-            # try:
-            #     result = processing(original, new_model)
-            # except:
-            #     return "deeplearning error!"
-            # print('put data')
+            original = search(menu,keyword, page)
             x_data = []
             for datum in original:
                 if datum['content']:
-                    # print((' '.join(datum['content']))[:100].replace(' ', ''))
                     x_data.append(' '.join(datum['content']))
                 else:
                     x_data.append(datum['title'])
@@ -146,7 +131,8 @@ def process(keyword, page):
             sequences = tokenizer.texts_to_sequences(x_data)
             x_data = sequences
             # print('data processing')
-            data = np.array(pad_sequences(x_data, maxlen = 16899))
+            max_len = max(len(l) for l in x_data)
+            data = np.array(pad_sequences(x_data, maxlen = max_len))
             # print('predict')
             result = model.predict(data)
             resultlist = result.tolist()
@@ -167,5 +153,3 @@ if __name__ == "__main__":
     scheduler.start()
 
     app.run(debug=False, host="0.0.0.0", port=5000)
-
-    # app.run(debug=False)

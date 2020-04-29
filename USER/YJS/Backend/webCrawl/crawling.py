@@ -17,7 +17,7 @@ def MaskingTemplateText(text):
     return text
     # return True if text in TT else False
 
-def search(keyword, page):
+def search(menu, keyword, page):
     base_url = "https://cafe.naver.com/joonggonara"
     headers = { # 헤더를 넣지 않아도 작동하는 것을 확인했습니다.
     "cookie" : config("cookie"),
@@ -28,7 +28,11 @@ def search(keyword, page):
 
     def get_article_data():
         newKeyword = str(keyword.encode('ms949')).lstrip("b'").rstrip("'").replace("\\x","%")
-        url = base_url + f"/ArticleSearchList.nhn?search.clubid=10050146&search.searchdate=all&search.page={page}&search.searchBy=0&search.query={newKeyword}&search.includeAll=&search.exclude=&search.include=&search.exact=&"
+        if menu == 0:
+            url = base_url + f"/ArticleSearchList.nhn?search.clubid=10050146&search.searchdate=all&search.page={page}&search.searchBy=0&search.query={newKeyword}&search.includeAll=&search.exclude=&search.include=&search.exact=&"
+        else:
+            url = base_url + f"/ArticleSearchList.nhn?search.clubid=10050146&search.searchdate=all&search.page={page}&search.searchBy=0&search.query={newKeyword}&search.defaultValue=1&search.includeAll=&search.exclude=&search.include=&search.exact=&search.sortBy=date&userDisplay=15&search.media=0&search.option=0&search.menuid={menu}"
+            print(url)
         html = requests.get(url, headers = headers)
         soup = BeautifulSoup(html.text, 'html.parser')
         soup = soup.select('#main-area > div.article-board > table > tbody> tr')
@@ -89,8 +93,6 @@ def search(keyword, page):
                 content.pop(0)
         except Exception as e:
             print(f'content error! {str(e)} {title}')
-            # print(ps)
-            # print(spans)
             content = []
         try: 
             date = data.select_one("div.tit-box > div.fr > table > tbody > tr > td.m-tcol-c.date").text
