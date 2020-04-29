@@ -14,14 +14,14 @@ function App() {
   return (
     <div style={{height: "100%", display: "flex", flexDirection: "column"}}>
       <LoadingOverlay active={searchloading} spinner text="Loading..." styles={{wrapper: {height: '100%'}}}>
-        <body style={{minHeight: "84%"}}>
-          <div style= {{margin: "2% 2% 5% 2%", display: "flex", justifyContent: "flex-end"}}>
+        <body style={{minHeight: "100%", backgroundColor: "rgba(255, 255, 255, 0.5)"}}>
+          <div style= {{display: "flex", justifyContent: "flex-end"}}>
             <Link to="/">
-              <Button variant="outline-primary">홈</Button>
+              <Button variant="outline-primary" style={{margin: "10px 3px 0 0"}}>홈</Button>
             </Link>
           
             <Link to="/about">
-              <Button variant="outline-primary">소개</Button>
+              <Button variant="outline-primary" style={{margin: "10px 10px 0 0"}}>소개</Button>
             </Link>
           </div>
           <Route path="/" exact={true} render={()=><Home setSearchloading={setSearchloading} />}/>
